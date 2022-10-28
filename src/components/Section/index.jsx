@@ -44,7 +44,7 @@ export default function Index() {
                       title={it.title}
                     >
                       <span class={styles.first}>
-                        {it.text.slice(0, 2).toUpperCase()}
+                        {(it.text || "").slice(0, 2).toUpperCase()}
                       </span>
                       <span>{it.text}</span>
                     </a>

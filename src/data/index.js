@@ -513,12 +513,12 @@ allData = [
     title: "搜索",
     data: [
       {
-        name: "bing",
+        text: "bing",
         url: "https://cn.bing.com/",
         src: "https://cn.bing.com/sa/simg/favicon-2x.ico",
       },
       {
-        name: "google",
+        text: "google",
         url: "https://www.google.com/",
         src: "https://images.frontendjs.com/google.png?imageView2/2/h/60",
       },
