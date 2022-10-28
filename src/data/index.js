@@ -508,4 +508,22 @@ for (const key in modules) {
   const moduleName = key.replace(/^\.\/(.*)\.\w+$/, "$1").split("/")[1];
   arr.push(modules[key][moduleName]);
 }
-allData = [...arr, ...allData];
+allData = [
+  {
+    title: "搜索",
+    data: [
+      {
+        name: "bing",
+        url: "https://cn.bing.com/",
+        src: "https://cn.bing.com/sa/simg/favicon-2x.ico",
+      },
+      {
+        name: "google",
+        url: "https://www.google.com/",
+        src: "https://images.frontendjs.com/google.png?imageView2/2/h/60",
+      },
+    ],
+  },
+  ...arr,
+  ...allData,
+];
