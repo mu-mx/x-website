@@ -1,11 +1,11 @@
-
-import styles  from './App.module.css';
+import "./App.module.less";
+import Section from "./components/Section";
 
 function App() {
   return (
-    <div class={styles.App}>
-        hello
-    </div>
+    <>
+      <Section />
+    </>
   );
 }
 
