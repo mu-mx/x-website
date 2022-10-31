@@ -4,9 +4,9 @@ const lines = {
   data: [
     {
       src: "https://gw.alipayobjects.com/zos/rmsportal/UTjFYEzMSYVwzxIGVhMu.png",
-      text: "语雀",
+      text: "语雀-蓝晨",
       title: "语雀文档",
-      url: "https://www.yuque.com/",
+      url: "https://www.yuque.com/lcer",
     },
     {
       text: "掘金",
@@ -211,10 +211,39 @@ const algorithm = {
   ],
 };
 
+// vscode
+const vscode = {
+  title: "vscode",
+
+  data: [
+    {
+      text: "IntelliCode",
+      url: "https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode",
+    },
+    {
+      text: "react-快捷键",
+      url: "https://github.com/dsznajder/vscode-react-javascript-snippets/blob/HEAD/docs/Snippets.md",
+    },
+    {
+      text: "jq-快捷键",
+      url: "https://marketplace.visualstudio.com/items?itemName=donjayamanne.jquerysnippets",
+    },
+    {
+      text: "js-快捷键",
+      url: "https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-javascript-snippet",
+    },
+    {
+      text: "1loc-快捷键",
+      url: "https://1loc.dev/",
+    },
+  ],
+};
+
 export default {
   lines,
   courses,
   icons,
   chartFrame,
   algorithm,
+  vscode,
 };

@@ -12,6 +12,14 @@ const searchs = {
       url: "https://www.google.com/",
       src: "https://images.frontendjs.com/google.png?imageView2/2/h/60",
     },
+    {
+      text: "猫爪导航",
+      url: "https://www.v2fy.com/",
+    },
+    {
+      text: "今日热榜",
+      url: "https://tophub.today/",
+    },
   ],
 };
 
@@ -52,6 +60,14 @@ const tools = {
       src: "https://www.bootcdn.cn/assets/ico/favicon.ico?1644166305141",
       text: "BootCDN",
       url: "https://www.bootcdn.cn/",
+    },
+    {
+      text: "jsdelivr",
+      url: "https://www.jsdelivr.com/",
+    },
+    {
+      text: "字节跳动cdn",
+      url: "https://cdn.bytedance.com/",
     },
     {
       src: "https://www.aconvert.com/favicon.ico",
@@ -111,6 +127,23 @@ const tools = {
       text: "WallHaven",
       url: "https://wallhaven.cc/",
     },
+
+    {
+      text: "ts 语法解释器",
+      url: "https://www.typescriptlang.org/",
+    },
+    {
+      text: "ts AST Viewer",
+      url: "https://ts-ast-viewer.com/",
+    },
+    {
+      text: "astexplorer AST",
+      url: "https://astexplorer.net/",
+    },
+    {
+      text: "腾讯软件",
+      url: "https://pc.qq.com/",
+    },
   ],
 };
 
@@ -149,10 +182,18 @@ const clas = {
       text: "Pinia",
       url: "https://pinia.vuejs.org/",
     },
+
+    /* React */
+
     {
       text: "react-router",
       title: "react 的官方路由",
       url: "https://reactrouter.com/en/main",
+    },
+    {
+      text: "react-router v5",
+      title: "react 的官方路由 v5",
+      url: "https://v5.reactrouter.com/web/guides/quick-start",
     },
     {
       src: "https://www.mobxjs.com/img/favicon.png",
@@ -160,8 +201,6 @@ const clas = {
       title: "MobX 是一个经过战火洗礼的库,使得状态管理变得简单和可扩展",
       url: "https://cn.mobx.js.org/",
     },
-
-    /* React */
     {
       src: "https://ahooks.gitee.io/simple-logo.svg",
       text: "ahooks",
