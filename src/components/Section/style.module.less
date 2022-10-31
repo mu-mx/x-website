@@ -1,41 +1,3 @@
-.hidden {
-  overflow: hidden;
-}
-.fold {
-  width: 26px;
-  height: 26px;
-  line-height: 32px;
-  z-index: 5;
-  position: absolute;
-  border: 1px solid var(--color-border);
-  box-shadow: 0 2px 4px 0px rgb(0 0 0 / 6%);
-  top: 7px;
-  background-color: var(--color-box);
-  border-radius: 50px;
-  text-align: center;
-  cursor: pointer;
-  svg {
-    transition: transform 0.3s ease-in-out;
-    width: 18px;
-    height: 18px;
-  }
-}
-
-.hot-box {
-  padding: 20px 48px;
-  display: flex;
-  flex-wrap: wrap;
-  min-height: 166px;
-}
-.title-icon {
-  position: absolute;
-  top: 0;
-  width: 40px;
-  height: 40px;
-  background: url(https://vkceyugu.cdn.bspapp.com/VKCEYUGU-39734fbc-b241-4d89-ad87-0befd655e266/273b3c5d-05d6-42ec-ad39-e32097e7ffe7.svg);
-  background-size: cover;
-}
-
 section {
   position: relative;
   width: 60%;
@@ -47,6 +9,8 @@ section {
     background-color: var(--color-box);
     line-height: 42px;
     margin-bottom: 20px;
+
+    overflow: hidden;
   }
 
   h3 {
@@ -59,6 +23,14 @@ section {
 
     display: flex;
     justify-content: space-between;
+
+    b {
+      display: inline-block;
+      width: 24px;
+      cursor: pointer;
+      flex: 2;
+      text-align: right;
+    }
   }
 
   .list-item {
@@ -70,14 +42,21 @@ section {
   .item-link {
     padding: 0 16px;
     height: 42px;
+    line-height: 42px;
     flex-shrink: 0;
     margin: 16px 0;
+    font-size: 14px;
+    min-width: 140px;
+    text-align: center;
 
-    span {
-      vertical-align: middle;
-      font-size: 18px;
-      font-weight: 500;
-    }
+    display: inline-block;
+  }
+
+  .item-link:hover {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    background: #6b7184;
   }
 
   .first {

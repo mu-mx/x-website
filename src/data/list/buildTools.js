@@ -1,5 +1,5 @@
 // 构建工具
-export const buildTools = {
+const buildTools = {
   title: "构建工具",
   data: [
     {
@@ -54,4 +54,15 @@ export const buildTools = {
       title: "零配置构建工具",
     },
   ],
+};
+
+const clol = {
+  title: "构具",
+  data: [],
+};
+
+
+export default {
+    buildTools,
+    clol,
 };
