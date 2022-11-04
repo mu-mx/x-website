@@ -13,6 +13,9 @@ const searchs = {
       src: "https://images.frontendjs.com/google.png?imageView2/2/h/60",
     },
     {
+      type: "line",
+    },
+    {
       text: "猫爪导航",
       url: "https://www.v2fy.com/",
     },
@@ -23,9 +26,9 @@ const searchs = {
   ],
 };
 
-// 工具网址
+// 开发工具
 const tools = {
-  title: "工具网址",
+  title: "开发工具",
   data: [
     {
       src: "https://fanyi-cdn.cdn.bcebos.com/static/translation/img/favicon/favicon-32x32_ca689c3.png",
@@ -36,6 +39,10 @@ const tools = {
       src: "https://shared.ydstatic.com/fanyi/fanyi-ad-place/online/0.0.11/images/logo_cidian.png",
       text: "有道翻译",
       url: "https://fanyi.youdao.com/",
+    },
+
+    {
+      type: "line",
     },
 
     {
@@ -55,6 +62,10 @@ const tools = {
       src: "https://lhcdn.lanhuapp.com/web/static/favicon.ico?v=2",
       text: "蓝湖",
       url: "https://lanhuapp.com/web/",
+    },
+
+    {
+      type: "line",
     },
     {
       src: "https://www.bootcdn.cn/assets/ico/favicon.ico?1644166305141",
@@ -78,6 +89,10 @@ const tools = {
       src: "https://caniuse.com/img/favicon-128.png",
       text: "web兼容性",
       url: "https://caniuse.com/flexbox",
+    },
+
+    {
+      type: "line",
     },
     {
       src: "https://vkceyugu.cdn.bspapp.com/VKCEYUGU-39734fbc-b241-4d89-ad87-0befd655e266/fbe27402-b82c-4e0b-b74b-309720a34d17.ico",
@@ -140,6 +155,11 @@ const tools = {
       text: "astexplorer AST",
       url: "https://astexplorer.net/",
     },
+
+    {
+      type: "line",
+    },
+
     {
       text: "腾讯软件",
       url: "https://pc.qq.com/",
@@ -147,9 +167,9 @@ const tools = {
   ],
 };
 
-// 工具库
+// 框架库
 const clas = {
-  title: "工具库",
+  title: "框架库",
   data: [
     /* Vue */
     {
@@ -181,6 +201,10 @@ const clas = {
       title: "Pinia 是 Vue 的专属状态管理库",
       text: "Pinia",
       url: "https://pinia.vuejs.org/",
+    },
+
+    {
+      type: "line",
     },
 
     /* React */
@@ -219,6 +243,10 @@ const clas = {
       title: "让中后台开发更简单",
     },
 
+    {
+      type: "line",
+    },
+
     /* Base */
     {
       text: "axios",
@@ -247,6 +275,11 @@ const clas = {
       url: "https://3.swiper.com.cn/",
       title: "开源、免费、强大的移动端触摸滑动插件",
     },
+
+    {
+      type: "line",
+    },
+
     {
       text: "mockjs",
       url: "http://mockjs.com/",

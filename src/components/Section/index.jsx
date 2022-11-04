@@ -111,16 +111,22 @@ export default function Index() {
               </h3>
               <div class={`${styles["list-item"]}   `}>
                 <For each={item.data} fallback={<div>Failed</div>}>
-                  {(it) => (
-                    <a
-                      target={isOpen() ? "_self" : "_blank"}
-                      href={it.url}
-                      class={`${styles["item-link"]} tips`}
-                      title={it.title || it.text}
-                    >
-                      {it.text}
-                    </a>
-                  )}
+                  {(it) =>
+                    it.type === "line" ? (
+                      <>
+                        <hr style={{ width: "100%", margin: "12px 0" }} />
+                      </>
+                    ) : (
+                      <a
+                        target={isOpen() ? "_self" : "_blank"}
+                        href={it.url}
+                        class={`${styles["item-link"]} tips`}
+                        title={it.title || it.text}
+                      >
+                        {it.text}
+                      </a>
+                    )
+                  }
                 </For>
               </div>
             </div>

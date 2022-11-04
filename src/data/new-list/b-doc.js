@@ -1,6 +1,6 @@
-// 前端框架的官方文档
+// 框架官方
 const docs = {
-  title: "前端框架的官方文档",
+  title: "框架官方",
   data: [
     /* vue */
     {
@@ -31,6 +31,10 @@ const docs = {
       title: "Vue 驱动的静态网站生成器",
     },
 
+    {
+      type: "line",
+    },
+
     /* react */
     {
       text: "React",
@@ -54,12 +58,18 @@ const docs = {
       url: "http://taro-docs.jd.com/taro/docs/README",
       title: "一个开放式跨端跨框架解决方案",
     },
+    {
+      type: "line",
+    },
 
     /* Angular */
     {
       text: "Angular",
       url: "https://angular.cn/",
       title: "现代 Web 开发平台",
+    },
+    {
+      type: "line",
     },
 
     /* 开发脚手架 */
@@ -72,6 +82,9 @@ const docs = {
       text: "UmiJs4",
       title: "React-脚手架",
       url: "https://umijs.org/",
+    },
+    {
+      type: "line",
     },
 
     /* express */
@@ -90,6 +103,9 @@ const docs = {
       title: "阿里的node框架",
       url: "https://www.koajs.com.cn/",
     },
+    {
+      type: "line",
+    },
 
     /* electron */
     {
@@ -102,6 +118,9 @@ const docs = {
       url: "https://tauri.app/zh/",
       title: "为多平台部署构建一个优化、安全和前端独立的应用。",
     },
+    {
+      type: "line",
+    },
 
     /* 微信小程序 */
     {
@@ -109,12 +128,18 @@ const docs = {
       title: "微信小程序",
       url: "https://developers.weixin.qq.com/miniprogram/dev/framework/",
     },
+    {
+      type: "line",
+    },
 
     /* flutter */
     {
       text: "flutter",
       url: "https://flutterchina.club/",
       title: "极速构建漂亮的原生应用",
+    },
+    {
+      type: "line",
     },
 
     /* 微前端 */
@@ -128,6 +153,9 @@ const docs = {
       url: "https://qiankun.umijs.org/zh",
       title: "可能是你见过最完善的微前端解决方案🧐",
     },
+    {
+      type: "line",
+    },
 
     /* firebase */
     {
@@ -135,12 +163,18 @@ const docs = {
       url: "https://firebase.google.com/docs/build",
       title: "Firebase 文档",
     },
+    {
+      type: "line",
+    },
 
     /* python */
     {
       text: "Python",
       url: "https://docs.python.org/zh-cn/3/",
       title: "Python 3.11.0 文档",
+    },
+    {
+      type: "line",
     },
 
     /* css */
@@ -164,6 +198,9 @@ const docs = {
       text: "stylus",
       url: "https://www.stylus-lang.cn/",
     },
+    {
+      type: "line",
+    },
 
     /* jquery */
     {
@@ -172,11 +209,17 @@ const docs = {
       title: "jquery 文档",
       url: "https://jquery.cuishifeng.cn/",
     },
+    {
+      type: "line",
+    },
 
     /* node */
     {
       text: "node",
       url: "http://nodejs.cn/",
+    },
+    {
+      type: "line",
     },
 
     /* Typescript */
@@ -188,9 +231,9 @@ const docs = {
   ],
 };
 
-// 前端ui框架
+// ui框架
 const uis = {
-  title: "前端ui框架",
+  title: "ui框架",
   data: [
     /* vue */
     {
@@ -238,6 +281,10 @@ const uis = {
       url: "https://varlet.gitee.io/varlet-ui/#/zh-CN/home",
     },
 
+    {
+      type: "line",
+    },
+
     /* react */
     {
       text: "antd react",
@@ -271,6 +318,10 @@ const uis = {
       text: "NutUI-JDT",
       url: "https://nutui.jd.com/jdt/#/",
       title: "京东科技移动端组件库",
+    },
+
+    {
+      type: "line",
     },
 
     /* Angular */
