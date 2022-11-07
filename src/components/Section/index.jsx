@@ -3,6 +3,7 @@ import styles from "./style.module.less";
 import { createSignal, createEffect } from "solid-js";
 
 import * as datals from "./../../data";
+import TopBar from "./../TopBar";
 
 export default function Index() {
   const [isCol, setIsCol] = createSignal(
@@ -133,6 +134,8 @@ export default function Index() {
           )}
         </For>
       </section>
+
+      <TopBar />
     </>
   );
 }

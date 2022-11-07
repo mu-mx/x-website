@@ -247,6 +247,21 @@ const clas = {
       type: "line",
     },
 
+    {
+      text: "babel",
+      url: "https://www.babeljs.cn/",
+      title: "今天就开始使用下一代的 JavaScript 语法编程吧！",
+    },
+    {
+      text: "ESLint",
+      url: "http://eslint.cn/",
+      title: "可组装的JavaScript和JSX检查工具",
+    },
+
+    {
+      type: "line",
+    },
+
     /* Base */
     {
       text: "axios",
@@ -349,6 +364,11 @@ const clas = {
       text: "overapi",
       url: "https://overapi.com/",
       title: "程序员备忘录文档",
+    },
+    {
+      text: "notneedjquery",
+      url: "youmightnotneedjquery.com/#json",
+      title: "你可能不需要jQuery",
     },
   ],
 };
