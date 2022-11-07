@@ -280,7 +280,7 @@ const interview = {
     {
       text: "大厂总结",
       title: "大厂面试题每日一题",
-      url: "https://q.shanyue.tech/interviews/2021-01-27.html#_04-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-react-hooks-%E5%AE%9E%E7%8E%B0-usefetch-%E8%AF%B7%E6%B1%82%E6%95%B0%E6%8D%AE",
+      url: "https://q.shanyue.tech/",
     },
     {
       text: "ts",
@@ -290,7 +290,7 @@ const interview = {
     {
       text: "前端面试",
       title: "前端每日一题",
-      url: "https://lgwebdream.github.io/FE-Interview/daily/",
+      url: "https://lgwebdream.github.io/FE-Interview/",
     },
     {
       type: "line",
