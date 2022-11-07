@@ -2,7 +2,7 @@ export const webSearchUrl = [];
 
 export let allData = [];
 
-const modules = import.meta.glob("./new-list/*.js", { eager: true });
+const modules = import.meta.glob("./lib/*.js", { eager: true });
 const arr = [];
 Object.values(modules).forEach((val) => {
   const mods = val.default;

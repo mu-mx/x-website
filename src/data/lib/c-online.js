@@ -31,6 +31,30 @@ const lines = {
       title: "知乎",
       url: "https://www.zhihu.com/",
     },
+    {
+      type: "line",
+    },
+
+    {
+      text: "React资源",
+      title: "React学习资源汇总",
+      url: "https://github.com/tsrot/study-notes/blob/master/React%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%90%E6%B1%87%E6%80%BB.md",
+    },
+    {
+      text: "ReactHook",
+      title: "React Hooks全面理解教程-前端开发博客",
+      url: "http://caibaojian.com/react-hooks.html#t8",
+    },
+    {
+      text: "fb的crud",
+      title: "firebase 的 firestore 使用例子",
+      url: "https://github.com/firebase/snippets-web/blob/8a72018c094b2d48ecbf1690787b94a01ee8fab4/firestore/test.firestore.js#L334-L355",
+    },
+    {
+      text: "react单测",
+      title: "react单元测试和集成测试",
+      url: "https://blog.csdn.net/kuangshp128/article/details/119320875",
+    },
   ],
 };
 
@@ -211,6 +235,116 @@ const algorithm = {
   ],
 };
 
+// 面试
+const interview = {
+  title: "面试",
+  data: [
+    /* Vue */
+    {
+      text: "Vue解析",
+      url: "https://github.com/answershuto/learnVue",
+    },
+    {
+      text: "Vue揭秘",
+      url: "https://ustbhuangyi.github.io/vue-analysis",
+    },
+    {
+      type: "line",
+    },
+
+    /* React */
+    {
+      text: "React解析",
+      url: "https://7kms.github.io/react-illustration-series/",
+    },
+    {
+      text: "React揭秘",
+      url: "https://react.iamkasong.com/",
+    },
+
+    {
+      type: "line",
+    },
+
+    /* node */
+    {
+      text: "node解析",
+      url: "https://yjhjstz.gitbooks.io/deep-into-node/content/",
+    },
+
+    {
+      type: "line",
+    },
+
+    /* 面试文档 */
+    {
+      text: "ssh的博客",
+      url: "https://ssh-blog.vercel.app/",
+    },
+    {
+      text: "面试总结",
+      url: "https://q.shanyue.tech/interviews/2021-01-27.html#_04-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-react-hooks-%E5%AE%9E%E7%8E%B0-usefetch-%E8%AF%B7%E6%B1%82%E6%95%B0%E6%8D%AE",
+    },
+    {
+      text: "ts",
+      url: "https://hejialianghe.gitee.io/react/react-actualCombat.html#_7-2-2-%E6%89%A9%E5%B1%95%E5%AD%A6%E4%B9%A0",
+    },
+    {
+      text: "前端面试",
+      url: "https://lgwebdream.github.io/FE-Interview/daily/",
+    },
+    {
+      text: "前端面试",
+      url: "https://lgwebdream.github.io/FE-Interview/daily/",
+    },
+    {
+      type: "line",
+    },
+
+    /* github资源 */
+    {
+      text: "js数据结构",
+      url: "https://github.com/trekhleb/javascript-algorithms/blob/master/README.zh-CN.md",
+    },
+    {
+      text: "js进阶",
+      url: "https://github.com/lydiahallie/javascript-questions/blob/master/zh-CN/README-zh_CN.md",
+    },
+    {
+      text: "jsNode测试",
+      url: "https://github.com/goldbergyoni/javascript-testing-best-practices/blob/master/readme-zh-CN.md",
+    },
+    {
+      text: "前端汇总",
+      url: "https://github.com/FrontEndGitHub/FrontEndGitHub",
+    },
+    {
+      text: "电子书大全",
+      url: "https://github.com/EbookFoundation/free-programming-books/blob/main/books/free-programming-books-zh.md",
+    },
+    {
+      text: "清华计课",
+      title: "清华大学计算机系课程攻略",
+      url: "https://github.com/PKUanonym/REKCARC-TSC-UHT",
+    },
+    {
+      text: "sf总结",
+      title: "sf总结的github重磅项目",
+      url: "https://segmentfault.com/a/1190000040255573",
+    },
+    {
+      text: "GitHub项目",
+      title: "GitHub 上入门级、有趣的开源项目",
+      url: "https://hellogithub.com/",
+    },
+    {
+      text: "Spring Boot",
+      title: "Spring Boot学习教程+实战项目",
+      url: "https://zhuanlan.zhihu.com/p/150513285",
+    },
+  ],
+};
+
 // vscode
 const vscode = {
   title: "vscode",
@@ -245,5 +379,6 @@ export default {
   icons,
   chartFrame,
   algorithm,
+  interview,
   vscode,
 };

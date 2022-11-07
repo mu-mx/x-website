@@ -42,6 +42,14 @@ const docs = {
       title: "用于构建用户界面的 JavaScript 库",
     },
     {
+      text: "react新",
+      url: "https://beta.reactjs.org/learn/javascript-in-jsx-with-curly-braces#using-double-curlies-css-and-other-objects-in-jsx",
+      title: "react-新文档-测试版",
+    },
+
+
+
+    {
       text: "React-native",
       url: "https://www.react-native.cn/",
       title: "一次学习，随处编写",
