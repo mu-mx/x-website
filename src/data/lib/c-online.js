@@ -278,23 +278,18 @@ const interview = {
 
     /* 面试文档 */
     {
-      text: "ssh的博客",
-      url: "https://ssh-blog.vercel.app/",
-    },
-    {
-      text: "面试总结",
+      text: "大厂总结",
+      title: "大厂面试题每日一题",
       url: "https://q.shanyue.tech/interviews/2021-01-27.html#_04-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-react-hooks-%E5%AE%9E%E7%8E%B0-usefetch-%E8%AF%B7%E6%B1%82%E6%95%B0%E6%8D%AE",
     },
     {
       text: "ts",
+      title: "TypeScripts实战",
       url: "https://hejialianghe.gitee.io/react/react-actualCombat.html#_7-2-2-%E6%89%A9%E5%B1%95%E5%AD%A6%E4%B9%A0",
     },
     {
       text: "前端面试",
-      url: "https://lgwebdream.github.io/FE-Interview/daily/",
-    },
-    {
-      text: "前端面试",
+      title: "前端每日一题",
       url: "https://lgwebdream.github.io/FE-Interview/daily/",
     },
     {
