@@ -37,40 +37,42 @@ export default function Index() {
   return (
     <>
       <section>
-        <label>
-          是否本页打开：
-          <input
-            type="checkbox"
-            onChange={(e) => {
-              localStorage.setItem("urlOpenType", e.target.checked);
-              setIsOpen(e.target.checked);
-            }}
-            checked={isOpen()}
-            name=""
-            id=""
-          />
-        </label>
-        &nbsp; &nbsp;
-        <label>
-          一键{isCol().length === datals.allData.length ? "收起" : "展开"} ：
-          <input
-            type="checkbox"
-            onChange={(e) => {
-              if (e.target.checked) {
+        <div class={`${styles["top-tip"]}`}>
+          <label>
+            本页打开
+            <input
+              type="checkbox"
+              onChange={(e) => {
+                localStorage.setItem("urlOpenType", e.target.checked);
+                setIsOpen(e.target.checked);
+              }}
+              checked={isOpen()}
+              name=""
+              id=""
+            />
+          </label>
+
+          <span>
+            <span
+              onClick={() => {
                 var oldss = [...Array(datals.allData.length).keys()];
                 localStorage.setItem("cardOpen", JSON.stringify(oldss));
                 setIsCol(oldss);
-              } else {
+              }}
+            >
+              全展
+            </span>
+            &nbsp; &nbsp;
+            <span
+              onClick={() => {
                 localStorage.setItem("cardOpen", JSON.stringify([0]));
                 setIsCol([0]);
-              }
-            }}
-            checked={isCol().length === datals.allData.length}
-            name=""
-            id=""
-          />
-        </label>
-        <br />
+              }}
+            >
+              全收
+            </span>
+          </span>
+        </div>
         <br />
         <For each={datals.allData} fallback={<div>Failed</div>}>
           {(item, index) => (
