@@ -26,11 +26,17 @@ const lines = {
       url: "https://gitee.com/",
     },
     {
+      text: "CODING",
+      title: "Coding.net 是一个面向开发者的云端开发平台，提供 Git/SVN 代码托管、任务管理、在线 WebIDE、Cloud Studio、开发协作、文件管理、Wiki 管理、提供个人服务及企业版本的服务",
+      url: "https://recdar-code.coding.net/vcs/depots",
+    },
+    {
       src: "https://static.zhihu.com/heifetz/favicon.ico",
       text: "知乎",
       title: "知乎",
       url: "https://www.zhihu.com/",
     },
+
     {
       type: "line",
     },
