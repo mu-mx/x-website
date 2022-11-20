@@ -1,0 +1,36 @@
+// import dark theme
+@use "element-plus/theme-chalk/src/dark/css-vars.scss" as *;
+
+// :root {
+//   --ep-color-primary: red;
+// }
+
+@font-face {
+  font-family: JDLangZhengTi;
+  src: url(~/assets/fonts/JDLangZhengTi.ttf);
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+
+  font-family: JDLangZhengTi;
+}
+
+html.dark {
+  .fixed-wrap {
+    div {
+      background-color: #1d1e1f;
+      color: #589ef8;
+    }
+  }
+}
+
+
+
+.tips {
+    font-size: 14px !important;
+}
