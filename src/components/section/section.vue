@@ -1,8 +1,22 @@
 <template>
     <div class="section">
+        <el-row :gutter="20">
+            <el-col :xs="24" :sm="12" :md="7" :lg="5" :xl="4" v-for="(it, ind) in one.data" :key="ind" class="card">
+                <el-card shadow="hover">
+                    <el-tooltip class="box-item" popper-class="tips" effect="dark" :content="it.title || it.text"
+                        placement="top">
+                        <el-link class="card-text" :href="it.url" :target="global.urlOpenType ? '' : '_blank'" link>
+                            {{ it.text }}
+                        </el-link>
+
+                    </el-tooltip>
+
+                </el-card>
+            </el-col>
+        </el-row>
 
 
-        <el-card class="card-wrap" v-for="(item, index) in allData" :key="index">
+        <el-card class="card-wrap" v-for="(item, index) in otherData" :key="index">
             <el-collapse v-model="activeNames" @change="handleChange">
                 <el-collapse-item :name="index">
                     <template #title>
@@ -53,7 +67,7 @@ import { useGlobalStore } from '~/stores/global'
 
 const global = useGlobalStore()
 
-const allData = global.allData;
+const [one, ...otherData] = global.allData;
 
 const activeNames = ref(Array.isArray(global.cardOpen) ? global.cardOpen : JSON.parse(global.cardOpen))
 const handleChange = (val: string[]) => {

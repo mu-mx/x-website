@@ -218,7 +218,7 @@ const chartFrame = {
       url: "http://cesium.coinidea.com/",
     },
     {
-      text: "Cesium中文api文档",
+      text: "Cesium-api",
       title: "Cesium中文api文档",
       url: "http://cesium.xin/cesium/cn/Documentation1.62/",
     },

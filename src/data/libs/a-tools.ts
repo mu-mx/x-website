@@ -13,9 +13,6 @@ const searchs = {
       src: "https://images.frontendjs.com/google.png?imageView2/2/h/60",
     },
     {
-      type: "line",
-    },
-    {
       text: "猫爪导航",
       url: "https://www.v2fy.com/",
     },
@@ -46,9 +43,6 @@ const tools = {
       url: "https://pc.qq.com/",
     },
 
-    {
-      type: "line",
-    },
 
     {
       src: "https://static.clewm.net/static/images/favicon.ico",
@@ -259,16 +253,13 @@ const tools = {
       text: "astexplorer AST",
       url: "https://astexplorer.net/",
     },
-
-    {
-      type: "line",
-    },
+ 
   ],
 };
 
-// 框架库
+// 依赖库
 const clas = {
-  title: "框架库",
+  title: "依赖库",
   data: [
     {
       type: "line",
