@@ -81,7 +81,6 @@ export default defineConfig({
     rollupOptions: {
       external: [
         "vue",
-        "@vueuse/core",
         "element-plus",
         "vue-demi",
         "@element-plus/icons-vue",
@@ -90,7 +89,6 @@ export default defineConfig({
       plugins: [
         externalGlobals({
           vue: "Vue",
-          "@vueuse/core": "VueUse",
           "element-plus": "ElementPlus",
           "@element-plus/icons-vue": "ElementPlusIconsVue",
           "element-plus/dist/locale/zh-cn.mjs": "ElementPlusLocaleZhCn",
