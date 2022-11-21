@@ -1,6 +1,6 @@
-// 框架官方
+// 官方文档
 const docs = {
-  title: "框架官方",
+  title: "官方文档",
   data: [
     {
       type: "line",
@@ -361,5 +361,5 @@ const uis = {
 
 export default {
   docs,
-  uis,
+  //   uis,
 };

@@ -25,7 +25,7 @@
                                 <el-card shadow="hover">
                                     <el-tooltip class="box-item" popper-class="tips" effect="dark"
                                         :content="it.title || it.text" placement="top">
-                                        <el-link type="warning" class="card-text" :href="it.url"
+                                        <el-link class="card-text" :href="it.url"
                                             :target="global.urlOpenType ? '' : '_blank'" link>
                                             {{ it.text }}
                                         </el-link>

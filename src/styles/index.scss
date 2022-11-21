@@ -27,10 +27,16 @@ html.dark {
       color: #589ef8;
     }
   }
+
+  .card-text {
+    color: #f56c6c;
+    &:hover {
+      color: #f56c6c;
+      border-color: #f56c6c;
+    }
+  }
 }
 
-
-
 .tips {
-    font-size: 14px !important;
+  font-size: 14px !important;
 }

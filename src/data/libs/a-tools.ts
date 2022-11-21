@@ -270,6 +270,10 @@ const tools = {
 const clas = {
   title: "框架库",
   data: [
+    {
+      type: "line",
+      text: "Vue",
+    },
     /* Vue */
     {
       src: "https://cn.vuejs.org/images/logo.svg",
@@ -300,6 +304,51 @@ const clas = {
       title: "Pinia 是 Vue 的专属状态管理库",
       text: "Pinia",
       url: "https://pinia.vuejs.org/",
+    },
+
+    {
+      text: "v2 element",
+      title: "element vue2",
+      url: "https://element.eleme.cn/#/zh-CN",
+    },
+    {
+      text: "v3 element-plus",
+      title: "element vue3",
+      url: "https://element-plus.gitee.io/zh-CN/",
+    },
+    {
+      title: "antd vue  2,3",
+      text: "antd vue",
+      url: "https://www.antdv.com/docs/vue/introduce-cn/",
+    },
+    {
+      title: "vant vue2",
+      text: "Vant2",
+      url: "https://vant-contrib.gitee.io/vant/v2/#/zh-CN",
+    },
+    {
+      title: "vant vue3",
+      text: "Vant3",
+      url: "https://vant-contrib.gitee.io/vant/v3/#/zh-CN",
+    },
+    {
+      src: "https://www.uviewui.com/favicon.ico",
+      text: "uview",
+      title: "uView UI，是全面兼容nvue的uni-app生态框架",
+      url: "https://www.uviewui.com/",
+    },
+    {
+      src: "https://www.naiveui.com/assets/naivelogo.93278402.svg",
+      text: "Naive UI",
+      title:
+        "一个 Vue 3 组件库 比较完整，主题可调，使用 TypeScript，快 有点意思",
+      url: "https://www.naiveui.com/zh-CN/light",
+    },
+    {
+      src: "https://varlet.gitee.io/varlet-ui/varlet_icon.png",
+      title: "Varlet 是一个基于 Vue3 开发的 Material 风格移动端组件库",
+      text: "varlet-ui",
+      url: "https://varlet.gitee.io/varlet-ui/#/zh-CN/home",
     },
 
     {
@@ -340,6 +389,52 @@ const clas = {
       text: "procomponents",
       url: "https://procomponents.ant.design/",
       title: "让中后台开发更简单",
+    },
+
+    {
+      text: "antd react",
+      title: "react 的 antd 框架",
+      url: "https://ant.design/docs/react/introduce-cn",
+    },
+    {
+      text: "antd-mobile",
+      title: "react 的 antd 移动端框架",
+      url: "https://mobile.ant.design/zh",
+    },
+    {
+      src: "https://unpkg.byted-static.com/latest/byted/arco-config/assets/favicon.ico",
+      title: "字节跳动出品的企业级设计系统 react",
+      text: "arco-design",
+      url: "https://arco.design/react/docs/start",
+    },
+    {
+      src: "https://mui.com/static/favicon.ico",
+      title: "立即开始使用 React 和 Material-UI。",
+      text: "MUI",
+      url: "https://mui.com/zh/getting-started/installation/",
+    },
+    {
+      text: "TDesign",
+      title: "腾讯企业级设计体系",
+      url: "https://tdesign.tencent.com/",
+    },
+    {
+      src: "https://img12.360buyimg.com/imagetools/jfs/t1/101920/21/28459/834912/62870b04E0e1f20ec/17425bea5318a22c.png",
+      text: "NutUI-JDT",
+      url: "https://nutui.jd.com/jdt/#/",
+      title: "京东科技移动端组件库",
+    },
+
+    {
+      type: "line",
+      text: "Angular",
+    },
+
+    {
+      src: "https://ng.ant.design/assets/img/logo.svg",
+      text: "Antd Angular",
+      url: "https://ng.ant.design/docs/introduce/zh",
+      title: "遵循 Ant Design 设计规范的 Angular UI 组件库",
     },
 
     {
