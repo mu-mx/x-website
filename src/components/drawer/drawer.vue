@@ -68,8 +68,7 @@ const global = useGlobalStore()
 // }))
 
 
-let dataArr = [...Array(8).keys()]
-
+// let dataArr = [...Array(global.allData.length).keys()]
 
 const allTabs = ref(0);
 const drawer = ref(false)
@@ -83,12 +82,13 @@ const changeTop = () => {
 const toggle = () => {
     const cardOpen = global.cardOpen;
 
-    let oldss = [0]
+    let oldss: any = []
 
-    if (cardOpen.length === 1) {
-        oldss = dataArr
+    if (cardOpen.length !== global.allData.length) {
+        oldss = [...Array(global.allData.length).keys()]
     }
 
+    console.log('oldss -> :', oldss)
     global.setCardOpen(oldss)
 }
 
