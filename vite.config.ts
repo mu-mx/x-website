@@ -80,6 +80,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       external: [
+        "dayjs",
         "vue",
         "element-plus",
         "vue-demi",
@@ -88,6 +89,7 @@ export default defineConfig({
       ],
       plugins: [
         externalGlobals({
+          dayjs: "dayjs",
           vue: "Vue",
           "element-plus": "ElementPlus",
           "@element-plus/icons-vue": "ElementPlusIconsVue",
