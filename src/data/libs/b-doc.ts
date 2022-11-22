@@ -2,12 +2,11 @@
 const docs = {
   title: "官方文档",
   data: [
+    /* vue */
     {
       type: "line",
       text: "vue",
     },
-
-    /* vue */
     {
       text: "vue2",
       url: "https://cn.vuejs.org/",
@@ -36,12 +35,12 @@ const docs = {
       title: "Vue 驱动的静态网站生成器",
     },
 
+    /* react */
     {
       type: "line",
       text: "react",
     },
 
-    /* react */
     {
       text: "React",
       url: "https://react.docschina.org/",
@@ -70,23 +69,7 @@ const docs = {
       url: "http://taro-docs.jd.com/taro/docs/README",
       title: "一个开放式跨端跨框架解决方案",
     },
-    {
-      type: "line",
-      text: "Angular",
-    },
 
-    /* Angular */
-    {
-      text: "Angular",
-      url: "https://angular.cn/",
-      title: "现代 Web 开发平台",
-    },
-    {
-      type: "line",
-      text: "开发脚手架",
-    },
-
-    /* 开发脚手架 */
     {
       text: "UmiJs3",
       title: "React-脚手架",
@@ -97,12 +80,16 @@ const docs = {
       title: "React-脚手架",
       url: "https://umijs.org/",
     },
+
+    /* nodejs */
     {
       type: "line",
       text: "nodejs",
     },
-
-    /* express */
+    {
+      text: "node",
+      url: "http://nodejs.cn/",
+    },
     {
       text: "express",
       url: "https://www.expressjs.com.cn/",
@@ -118,84 +105,12 @@ const docs = {
       title: "阿里的node框架",
       url: "https://www.koajs.com.cn/",
     },
-    {
-      type: "line",
-      text: "electron",
-    },
 
-    /* electron */
-    {
-      text: "electron",
-      url: "http://www.electronjs.org/",
-      title: "使用 JavaScript，HTML 和 CSS 构建跨平台的桌面应用程序",
-    },
-    {
-      text: "tauri",
-      url: "https://tauri.app/zh/",
-      title: "为多平台部署构建一个优化、安全和前端独立的应用。",
-    },
-    {
-      type: "line",
-      text: "小程序",
-    },
-
-    /* 微信小程序 */
-    {
-      text: "微信小程序",
-      title: "微信小程序",
-      url: "https://developers.weixin.qq.com/miniprogram/dev/framework/",
-    },
-    {
-      type: "line",
-    },
-
-    /* flutter */
-    {
-      text: "flutter",
-      url: "https://flutterchina.club/",
-      title: "极速构建漂亮的原生应用",
-    },
-    {
-      type: "line",
-    },
-
-    /* 微前端 */
-    {
-      text: "MicroApp",
-      url: "https://zeroing.jd.com/micro-app/",
-      title: "一款轻量、高效、功能强大的微前端框架",
-    },
-    {
-      text: "qiankun",
-      url: "https://qiankun.umijs.org/zh",
-      title: "可能是你见过最完善的微前端解决方案🧐",
-    },
-    {
-      type: "line",
-    },
-
-    /* firebase */
-    {
-      text: "Firebase",
-      url: "https://firebase.google.com/docs/build",
-      title: "Firebase 文档",
-    },
-    {
-      type: "line",
-    },
-
-    /* python */
-    {
-      text: "Python",
-      url: "https://docs.python.org/zh-cn/3/",
-      title: "Python 3.11.0 文档",
-    },
+    /* css */
     {
       type: "line",
       text: "css",
     },
-
-    /* css */
     {
       text: "tailwindcss",
       url: "https://www.tailwindcss.cn/",
@@ -216,35 +131,57 @@ const docs = {
       text: "stylus",
       url: "https://www.stylus-lang.cn/",
     },
+
+    /* 其他 */
     {
       type: "line",
+      text: "其他",
     },
-
-    /* jquery */
+    {
+      text: "Angular",
+      url: "https://angular.cn/",
+      title: "现代 Web 开发平台",
+    },
+    {
+      text: "electron",
+      url: "http://www.electronjs.org/",
+      title: "使用 JavaScript，HTML 和 CSS 构建跨平台的桌面应用程序",
+    },
+    {
+      text: "tauri",
+      url: "https://tauri.app/zh/",
+      title: "为多平台部署构建一个优化、安全和前端独立的应用。",
+    },
+    {
+      text: "微信小程序",
+      title: "微信小程序",
+      url: "https://developers.weixin.qq.com/miniprogram/dev/framework/",
+    },
+    {
+      text: "flutter",
+      url: "https://flutterchina.club/",
+      title: "极速构建漂亮的原生应用",
+    },
+    {
+      text: "Firebase",
+      url: "https://firebase.google.com/docs/build",
+      title: "Firebase 文档",
+    },
+    {
+      text: "Python",
+      url: "https://docs.python.org/zh-cn/3/",
+      title: "Python 3.11.0 文档",
+    },
+    {
+      src: "https://www.tslang.cn/assets/images/icons/favicon.ico",
+      text: "Typescript",
+      url: "https://www.tslang.cn/",
+    },
     {
       src: "https://jquery.cuishifeng.cn/images/favicon.ico",
       text: "jquery",
       title: "jquery 文档",
       url: "https://jquery.cuishifeng.cn/",
-    },
-    {
-      type: "line",
-    },
-
-    /* node */
-    {
-      text: "node",
-      url: "http://nodejs.cn/",
-    },
-    {
-      type: "line",
-    },
-
-    /* Typescript */
-    {
-      src: "https://www.tslang.cn/assets/images/icons/favicon.ico",
-      text: "Typescript",
-      url: "https://www.tslang.cn/",
     },
   ],
 };

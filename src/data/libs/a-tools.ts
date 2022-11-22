@@ -43,7 +43,6 @@ const tools = {
       url: "https://pc.qq.com/",
     },
 
-
     {
       src: "https://static.clewm.net/static/images/favicon.ico",
       title: "草料二维码",
@@ -253,7 +252,6 @@ const tools = {
       text: "astexplorer AST",
       url: "https://astexplorer.net/",
     },
- 
   ],
 };
 
@@ -442,6 +440,18 @@ const clas = {
       text: "ESLint",
       url: "http://eslint.cn/",
       title: "可组装的JavaScript和JSX检查工具",
+    },
+
+    /* 微前端 */
+    {
+      text: "MicroApp",
+      url: "https://zeroing.jd.com/micro-app/",
+      title: "一款轻量、高效、功能强大的微前端框架",
+    },
+    {
+      text: "qiankun",
+      url: "https://qiankun.umijs.org/zh",
+      title: "可能是你见过最完善的微前端解决方案🧐",
     },
 
     {
