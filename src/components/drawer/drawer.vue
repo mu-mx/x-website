@@ -41,7 +41,12 @@
 
     <el-dialog v-model="drawer" width="30%" title="设置">
         <el-form label-position="right" label-width="100px">
+
             <el-form-item label="是否本页打开">
+                <el-switch v-model="urlOpenType" active-text="是" inactive-text="否" />
+            </el-form-item>
+
+            <el-form-item label="是否使用京东字体">
                 <el-switch v-model="urlOpenType" active-text="是" inactive-text="否" />
             </el-form-item>
         </el-form>
@@ -73,6 +78,7 @@ const global = useGlobalStore()
 const allTabs = ref(0);
 const drawer = ref(false)
 const urlOpenType = ref(global.urlOpenType)
+const useFamily = ref(global.useFamily)
 
 
 const changeTop = () => {
@@ -96,6 +102,10 @@ const toggle = () => {
 
 watch(urlOpenType, (val) => {
     global.setUrlOpenType(val)
+})
+
+watch(useFamily, (val) => {
+    global.setFamily(val)
 })
 
 
