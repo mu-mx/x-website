@@ -32,7 +32,7 @@ export const useGlobalStore = defineStore("global", {
         document.querySelector("body")!.style.fontFamily = "JDLangZhengTi";
       } else {
         document.querySelector("body")!.style.fontFamily =
-          "Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,\5fae8f6f96c59ed1,Arial,sans-serif";
+          "Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif";
       }
       this.useFamily = type;
       localStorage.setItem("useFamily", type?.toString());
