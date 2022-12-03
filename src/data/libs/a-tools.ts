@@ -565,7 +565,7 @@ const clas = {
     },
     {
       text: "notneedjquery",
-      url: "youmightnotneedjquery.com/#json",
+      url: "https://youmightnotneedjquery.com",
       title: "你可能不需要jQuery",
     },
   ],
