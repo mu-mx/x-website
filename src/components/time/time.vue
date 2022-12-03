@@ -2,7 +2,7 @@
     <div class="time-wrap">
 
 
-        <el-popover placement="bottom" width="400px" visible trigger="hover">
+        <el-popover placement="bottom" width="340px" style="height: 320px;" trigger="hover">
             <template #reference>
                 <span>
                     {{ day.format('YYYY-MM-DD') }}
@@ -10,6 +10,8 @@
                     {{ '星期' + week[day.day()] }}
                 </span>
             </template>
+
+            <el-calendar />
         </el-popover>
 
 
@@ -38,7 +40,15 @@ const value = ref(new Date())
 const week = ['日', '一', '二', '三', '四', '五', '六']
 
 </script>
+<style>
+.el-calendar-day {
+    height: unset !important;
+}
 
+.el-calendar__body {
+    padding: 0;
+}
+</style>
 
 <style scoped lang="scss">
 .time-wrap {
@@ -55,5 +65,8 @@ const week = ['日', '一', '二', '三', '四', '五', '六']
     .time {
         font-size: 24px;
     }
+
+
+
 }
 </style>
