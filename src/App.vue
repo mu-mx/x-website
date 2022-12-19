@@ -1,12 +1,10 @@
 <template>
-  <el-config-provider :locale="locale">
-    <el-row :gutter="20">
-      <el-col :span="16" :offset="4">
-        <Time />
-        <Section />
-      </el-col>
-    </el-row>
-  </el-config-provider>
+  <el-row :gutter="20">
+    <el-col :span="16" :offset="4">
+      <Time />
+      <Section />
+    </el-col>
+  </el-row>
 
   <Drawer />
 </template>
@@ -16,9 +14,6 @@ import { computed, ref, onMounted } from "vue";
 import Drawer from "./components/drawer";
 import Section from "./components/section";
 import Time from "./components/time";
-
-const ElementPlusLocaleZhCn = window.ElementPlusLocaleZhCn;
-const locale = computed(() => ElementPlusLocaleZhCn);
 
 onMounted(() => {
   // document.documentElement.scrollTop = 0;

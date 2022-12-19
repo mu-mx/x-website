@@ -13,4 +13,7 @@ declare module "element-plus/dist/locale/en.mjs";
 declare interface Window {
   ElementPlusIconsVue: any;
   ElementPlusLocaleZhCn: any;
+  ElementPlus: any;
+  dayjs: any;
+  dayjs_locale_zh_cn: any;
 }

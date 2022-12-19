@@ -41,7 +41,6 @@
           </span>
 
           <span v-else>{{ getLunarDay(data.day).dayCn }}</span>
-          
         </template>
       </el-calendar>
     </el-popover>
@@ -55,10 +54,11 @@
 <script setup lang="ts">
 import { computed, reactive, ref, watch } from "vue";
 import solarLunar from "solarlunar-es";
-import dayjs from "dayjs";
 import { useNow } from "@vueuse/core";
 
-(dayjs as any).en.weekStart = 1;
+window.ElementPlus.dayjs.en.weekStart = 1;
+
+const dayjs = window.dayjs;
 
 const visible = ref(false);
 
