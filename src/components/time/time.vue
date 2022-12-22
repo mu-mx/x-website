@@ -39,6 +39,9 @@
           >
             {{ getLunarDay(data.day).monthCn }}
           </span>
+          <span v-else-if="getLunarDay(data.day).term" style="color: chocolate">
+            {{ getLunarDay(data.day).term }}
+          </span>
 
           <span v-else>{{ getLunarDay(data.day).dayCn }}</span>
         </template>
