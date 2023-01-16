@@ -91,8 +91,7 @@ const todayLunar: any = getLunarDay(dayFormat);
 
 <style scoped lang="scss">
 .time-wrap {
-  margin: 12px 0;
-  margin-bottom: 100px;
+  margin-bottom: 0px;
 
   display: flex;
   flex-direction: row-reverse;
@@ -101,6 +100,8 @@ const todayLunar: any = getLunarDay(dayFormat);
   span {
     margin: 0 12px;
     font-size: 14px;
+    padding: 12px 0;
+    cursor: pointer;
   }
 
   .time {

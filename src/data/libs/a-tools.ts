@@ -3,11 +3,6 @@ const searchs = {
   title: "搜索",
   data: [
     {
-      text: "ecosia",
-      url: "https://www.ecosia.org/",
-      src: "https://cdn-static.ecosia.org/static/icons/favicon.ico",
-    },
-    {
       text: "bing",
       url: "https://cn.bing.com/",
       src: "https://cn.bing.com/sa/simg/favicon-2x.ico",
