@@ -48,7 +48,7 @@ Start the server
 
 ## Authors
 
-- [@octokatherine](https://github.com/mu-mx)
+- [@mu-mx](https://github.com/mu-mx)
 
 
 ## Contributing
