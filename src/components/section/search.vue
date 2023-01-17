@@ -46,6 +46,8 @@ import { useGlobalStore } from "~/stores/global";
 
 const global = useGlobalStore();
 
+const PinyinMatch = window.PinyinMatch;
+
 const mergeAllData = (val: any) => {
   const value: any = toRaw<any>(val);
   const data: any = [];
@@ -72,17 +74,18 @@ const loading = ref(false);
 
 const remoteMethod = (query: string) => {
   if (query !== "") {
-    // loading.value = true;
-    setTimeout(() => {
-      //   loading.value = false;
-      options.value = list.filter((item: any) => {
-        return (
-          item?.label?.toLowerCase().includes(query.toLowerCase()) ||
-          item?.value?.toLowerCase().includes(query.toLowerCase())
-        );
-        // return true;
-      });
-    }, 0);
+    options.value = list.filter((item: any) => {
+      const labelPinyin = PinyinMatch.match(item.label, query);
+      const typePinyin = PinyinMatch.match(item.type, query);
+
+      return (
+        labelPinyin.length ||
+        typePinyin.length ||
+        item?.label?.toLowerCase().includes(query.toLowerCase()) ||
+        item?.type?.toLowerCase().includes(query.toLowerCase()) ||
+        item?.value?.toLowerCase().includes(query.toLowerCase())
+      );
+    });
   } else {
     options.value = [];
   }
@@ -96,6 +99,7 @@ const handleChange = (param: any) => {
   }
 
   value.value = undefined;
+  options.value = list;
 };
 </script>
 

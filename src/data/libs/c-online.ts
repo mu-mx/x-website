@@ -105,12 +105,6 @@ const courses = {
       url: "https://docschina.org/",
     },
     {
-      src: "https://www.baidu.com/favicon.ico",
-      text: "百度",
-      title: "buhui  百度  baidu",
-      url: "http://buhuibaidu.me/",
-    },
-    {
       src: "https://chinese.freecodecamp.org/favicon-32x32.png?v=6cba562cbd10e31af925a976f3db73f7",
       text: "freeCodeCamp",
       title: "编程练习",

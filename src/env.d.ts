@@ -16,4 +16,5 @@ declare interface Window {
   ElementPlus: any;
   dayjs: any;
   dayjs_locale_zh_cn: any;
+  PinyinMatch: any;
 }
