@@ -117,17 +117,17 @@ const docs = {
       title: "无需离开您的HTML，即可快速建立现代网站。",
     },
     {
-      src: "https://www.sass.hk/favicon.ico",
+      imgSrc: "https://www.sass.hk/favicon.ico",
       text: "sass",
       url: "https://www.sass.hk/",
     },
     {
-      src: "https://less.bootcss.com/public/ico/favicon.ico",
+      imgSrc: "https://less.bootcss.com/public/ico/favicon.ico",
       text: "less",
       url: "https://less.bootcss.com/",
     },
     {
-      src: "https://www.stylus-lang.cn/favicon.ico",
+      imgSrc: "https://www.stylus-lang.cn/favicon.ico",
       text: "stylus",
       url: "https://www.stylus-lang.cn/",
     },
@@ -173,12 +173,12 @@ const docs = {
       title: "Python 3.11.0 文档",
     },
     {
-      src: "https://www.tslang.cn/assets/images/icons/favicon.ico",
+      imgSrc: "https://www.tslang.cn/assets/images/icons/favicon.ico",
       text: "Typescript",
       url: "https://www.tslang.cn/",
     },
     {
-      src: "https://jquery.cuishifeng.cn/images/favicon.ico",
+      imgSrc: "https://jquery.cuishifeng.cn/images/favicon.ico",
       text: "jquery",
       title: "jquery 文档",
       url: "https://jquery.cuishifeng.cn/",
@@ -186,117 +186,259 @@ const docs = {
   ],
 };
 
-// ui框架
-const uis = {
-  title: "ui框架",
+// 工具网址
+const tools = {
+  title: "工具网址",
   data: [
     {
       type: "line",
-      text: "vue",
+      text: "工具网址",
     },
-    /* vue */
+
     {
-      text: "v2 element",
-      title: "element vue2",
-      url: "https://element.eleme.cn/#/zh-CN",
-    },
-    {
-      text: "v3 element-plus",
-      title: "element vue3",
-      url: "https://element-plus.gitee.io/zh-CN/",
+      text: "Sass/Less转换CSS",
+      title: "Sass/Less在线转换工具 CSS转Sass Sass转换器 | Sass中文网",
+      url: "https://www.sass.hk/css2sass/",
     },
     {
-      title: "antd vue  2,3",
-      text: "antd vue",
-      url: "https://www.antdv.com/docs/vue/introduce-cn/",
+      text: "All转换工具",
+      title: "在线格式转换 All2All | 免费在线格式转换工具 免费在线转换工具",
+      url: "http://www.alltoall.net/",
     },
     {
-      title: "vant vue2",
-      text: "Vant2",
-      url: "https://vant-contrib.gitee.io/vant/v2/#/zh-CN",
+      text: "工具大全",
+      title: "工具123 - 在线工具大全_免下载_全在线小工具网站",
+      url: "http://www.gjw123.com/",
     },
     {
-      title: "vant vue3",
-      text: "Vant3",
-      url: "https://vant-contrib.gitee.io/vant/v3/#/zh-CN",
+      text: "正则可视化",
+      title: "Regulex：正则可视化",
+      url: "https://jex.im/regulex/#!flags=&re=%5E(a%7Cb)*%3F%24",
     },
     {
-      src: "https://www.uviewui.com/favicon.ico",
-      text: "uview",
-      title: "uView UI，是全面兼容nvue的uni-app生态框架",
-      url: "https://www.uviewui.com/",
+      text: "html转js字符串",
+      title: "HTML代码转换为JavaScript字符串-前端开发转换工具",
+      url: "http://tools.jb51.net/transcoding/html2js",
     },
     {
-      src: "https://www.naiveui.com/assets/naivelogo.93278402.svg",
-      text: "Naive UI",
+      text: "md5破解",
+      title: "md5在线解密破解,md5解密加密",
+      url: "https://www.cmd5.com/",
+    },
+    {
+      text: "vscode模板",
+      title: "编辑器代码模板生成",
+      url: "https://snippet-generator.app/?description=&tabtrigger=&snippet=&mode=vscode",
+    },
+    {
+      text: "程序员笔记",
+      title: "程序员笔记 - 分享程序员的知识字典！",
+      url: "https://www.knowledgedict.com/",
+    },
+    {
+      text: "消除图片背景",
+      title: "消除图片中的背景 – remove.bg",
+      url: "https://www.remove.bg/zh/upload",
+    },
+    {
+      text: "前端进阶仓库",
+      title: "前端进阶不可错过的 10 个 Github 仓库",
+      url: "https://mp.weixin.qq.com/s/uP2Ccc4rFa8H5ZWIGIx8yw",
+    },
+    {
+      text: "学习sql",
+      title: "一些学习sql的网站_小愚就是小小呀的博客-CSDN博客_学习sql的网站",
+      url: "https://blog.csdn.net/qq_37627820/article/details/108378098",
+    },
+    {
+      text: "图解前端",
+      title: "大前端面试宝典 - 图解前端",
+      url: "https://lucifer.ren/fe-interview/#/?id=%e5%85%b3%e4%ba%8e%e6%88%91",
+    },
+    {
+      text: "VIP视频解析",
+      title: "夜雨聆风VIP视频解析",
+      url: "https://vip.yeyulingfeng.com/index.html",
+    },
+    {
+      text: "md编辑器",
+      title: "markdown编辑器 - 在线工具",
+      url: "https://tool.lu/markdown/",
+    },
+    {
+      text: "生成readme",
+      title: "生成 readme 的-readme.so",
+      url: "https://readme.so/editor",
+    },
+    {
+      text: "vscode-web",
+      title: "Visual Studio Code - web",
+      url: "https://vscode.dev/",
+    },
+    {
+      text: "npm包趋势",
+      title: "npm多包比较趋势",
+      url: "https://www.npmtrends.com/",
+    },
+    {
+      text: "json转ts",
+      title: "在线JSON转typescript工具 - ToolTT在线工具箱",
+      url: "https://tooltt.com/json2typescript/",
+    },
+    {
+      text: "监控系统—SDK",
+      title: "【第2621期】从零开始搞监控系统 —— SDK",
+      url: "https://mp.weixin.qq.com/s/y6oZuej94mR6KkkI3bAQag",
+    },
+    {
+      text: "git太慢",
+      title: "git clone 失败或速度慢_BonnieZhang.的博客-CSDN博客_git太慢",
+      url: "https://blog.csdn.net/m0_47700906/article/details/126225169",
+    },
+    {
+      text: "Code预览工具",
+      title: "CodeRun_一个纯前端实现的在线代码运行预览工具",
+      url: "https://wanglin2.github.io/code-run-online/#/",
+    },
+    {
+      text: "网站测速",
+      title: "多个地点ping[translate.google.cn]服务器-网站测速-站长工具",
+      url: "https://ping.chinaz.com/translate.google.cn",
+    },
+    {
+      text: "俄罗斯翻译",
       title:
-        "一个 Vue 3 组件库 比较完整，主题可调，使用 TypeScript，快 有点意思",
-      url: "https://www.naiveui.com/zh-CN/light",
+        "localhost name – Yandex Translate – dictionary and online translation\n      between English and over 90 other languages.",
+      url: "https://translate.yandex.com/?lang=en-zh&text=localhost%20name",
+    },
+
+    {
+      text: "前端单测",
+      title: "前端单元测试介绍 - 简书",
+      url: "https://www.jianshu.com/p/3beaf7c2593e",
     },
     {
-      src: "https://varlet.gitee.io/varlet-ui/varlet_icon.png",
-      title: "Varlet 是一个基于 Vue3 开发的 Material 风格移动端组件库",
-      text: "varlet-ui",
-      url: "https://varlet.gitee.io/varlet-ui/#/zh-CN/home",
+      text: "Java指南",
+      title: "JavaGuide（Java学习&&面试指南）",
+      url: "https://javaguide.cn/home.html",
+    },
+    {
+      text: "idea激活码",
+      title:
+        "IDEA激活码,IDEA激活码2022,IDEA永久激活码_IDEA激活码2022和2023IDEA激活码,IDEA激活码2022,IDEA注册码,IDEA永久破解,Pycharm激活码,Webstorm激活码",
+      url: "https://www.ajihuo.com/idea/4222.html",
+    },
+
+    {
+      text: "微信助手",
+      title: "微信文件传输助手网页版",
+      url: "https://filehelper.weixin.qq.com/",
     },
 
     {
       type: "line",
-      text: "react",
-    },
-
-    /* react */
-    {
-      text: "antd react",
-      title: "react 的 antd 框架",
-      url: "https://ant.design/docs/react/introduce-cn",
-    },
-    {
-      text: "antd-mobile",
-      title: "react 的 antd 移动端框架",
-      url: "https://mobile.ant.design/zh",
-    },
-    {
-      src: "https://unpkg.byted-static.com/latest/byted/arco-config/assets/favicon.ico",
-      title: "字节跳动出品的企业级设计系统 react",
-      text: "arco-design",
-      url: "https://arco.design/react/docs/start",
-    },
-    {
-      src: "https://mui.com/static/favicon.ico",
-      title: "立即开始使用 React 和 Material-UI。",
-      text: "MUI",
-      url: "https://mui.com/zh/getting-started/installation/",
-    },
-    {
-      text: "TDesign",
-      title: "腾讯企业级设计体系",
-      url: "https://tdesign.tencent.com/",
-    },
-    {
-      src: "https://img12.360buyimg.com/imagetools/jfs/t1/101920/21/28459/834912/62870b04E0e1f20ec/17425bea5318a22c.png",
-      text: "NutUI-JDT",
-      url: "https://nutui.jd.com/jdt/#/",
-      title: "京东科技移动端组件库",
+      text: "有用地址",
     },
 
     {
-      type: "line",
-      text: "Angular",
+      text: "前端月报",
+      title: "如何提交 · JS前端开发群月报 · 看云",
+      url: "https://www.kancloud.cn/jsfront/month/227309",
     },
-
-    /* Angular */
-
     {
-      src: "https://ng.ant.design/assets/img/logo.svg",
-      text: "Antd Angular",
-      url: "https://ng.ant.design/docs/introduce/zh",
-      title: "遵循 Ant Design 设计规范的 Angular UI 组件库",
+      text: "FE.D博客园",
+      title: "FE.Deuce - 博客园",
+      url: "http://www.cnblogs.com/oicb/",
+    },
+    {
+      text: "CodeSandbox",
+      title: "CodeSandbox 在线编辑器",
+      url: "https://codesandbox.io/s/new",
+    },
+    {
+      text: "StackBlitz",
+      title: "StackBlitz 在线编辑器",
+      url: "https://stackblitz.com/",
+    },
+    {
+      text: "华为镜像",
+      title: "华为开源镜像站_软件开发服务_华为云",
+      url: "https://mirrors.huaweicloud.com/",
+    },
+    {
+      text: "mongo下载",
+      title: "mongodb-下载",
+      url: "http://dl.mongodb.org/dl/win32/x86_64",
+    },
+    {
+      text: "清华镜像",
+      title: "清华大学开源软件镜像站 | Tsinghua Open Source Mirror",
+      url: "https://mirrors.tuna.tsinghua.edu.cn/",
+    },
+    {
+      text: "创建webpack配置",
+      title: "创建webpack配置 - starting a new webpack or project",
+      url: "https://createapp.dev/",
+    },
+    {
+      text: "阿里云主机管理平台",
+      title: "阿里云主机管理平台",
+      url: "https://cp.aliyun.com/?spm=cp-aliyun-com.10698423.119.2.71d67231XjG2kp#/siteHome",
+    },
+    {
+      text: "阿里云-主机",
+      title: "阿里云-主机",
+      url: "https://wanwang.aliyun.com/?spm=cp-aliyun-com.10698423.0.0.767876f2FwnYyG&accounttraceid=5a4f76c5-15fd-436e-a6c9-c87975caa2e1",
+    },
+    {
+      text: "谷歌字体",
+      title: "Google Fonts | 谷歌字体中文版 | GoogleFonts",
+      url: "http://googlefonts.cn/?selection.family=Montserrat",
+    },
+    {
+      text: "万词王",
+      title: "万词王 WantWords",
+      url: "https://wantwords.net/",
+    },
+    {
+      text: "休息片刻",
+      title: "休息片刻",
+      url: "http://106.55.105.239:10001/",
+    },
+    {
+      text: "js使用状态",
+      title: "js的全球使用状态",
+      url: "https://2017.stateofjs.com/",
+    },
+    {
+      text: "PPChart图表",
+      title: "PPChart - 让图表更简单",
+      url: "http://ppchart.com/#/",
+    },
+    {
+      text: "生成模拟数据",
+      title: "批量生成模拟数据在线工具—工具猫",
+      url: "http://www.toolscat.com/dev/data-generator",
+    },
+    {
+      text: "生成随机数",
+      title: "在线随机数生成器",
+      url: "https://www.lddgo.net/string/randomnumber",
+    },
+    {
+      text: "生成随机日期时间",
+      title: "随机日期时间生成器 - 爱问 | 批处理",
+      url: "https://cnnqr.com/randtime.html",
+    },
+    {
+      text: "图片文字提取",
+      title: "图片转文字在线 - 图片文字提取 - 网页OCR文字识别 - 白描网页版",
+      url: "https://web.baimiaoapp.com/",
     },
   ],
 };
 
 export default {
   docs,
-  //   uis,
+  tools,
 };
