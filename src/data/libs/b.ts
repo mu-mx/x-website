@@ -201,6 +201,11 @@ const tools = {
       url: "https://www.sass.hk/css2sass/",
     },
     {
+      text: "gitignore",
+      title: "为你的项目创建必要的 .gitignore 文件",
+      url: "https://www.toptal.com/developers/gitignore",
+    },
+    {
       text: "All转换工具",
       title: "在线格式转换 All2All | 免费在线格式转换工具 免费在线转换工具",
       url: "http://www.alltoall.net/",
