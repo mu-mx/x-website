@@ -64,7 +64,7 @@ const tools = {
 
     {
       type: "line",
-      text: "办公文档",
+      text: "常用文档",
     },
 
     {
@@ -101,6 +101,11 @@ const tools = {
       text: "知乎",
       title: "知乎",
       url: "https://www.zhihu.com/",
+    },
+    {
+      text: "MDH 前端周刊",
+      title: "MDH Weekly MDH 前端周刊 我叫陈成（sorrycc），曾就职于阿里巴巴，取花名「云谦」，后转岗到蚂蚁集团，工作至今",
+      url: "https://mdhweekly.com/",
     },
 
     {
