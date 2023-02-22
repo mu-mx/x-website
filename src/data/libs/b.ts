@@ -339,6 +339,11 @@ const tools = {
       title: "微信文件传输助手网页版",
       url: "https://filehelper.weixin.qq.com/",
     },
+    {
+      text: "Chrome扩展",
+      title: "chrdow插件_Chrome扩展插件商店_优质crx应用",
+      url: "https://chrdow.com/",
+    },
 
     {
       type: "line",
