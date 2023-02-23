@@ -386,6 +386,11 @@ const tools = {
       url: "https://mirrors.tuna.tsinghua.edu.cn/",
     },
     {
+      text: "阿里云镜像",
+      title: "阿里云镜像",
+      url: "https://developer.aliyun.com/mirror/",
+    },
+    {
       text: "创建webpack配置",
       title: "创建webpack配置 - starting a new webpack or project",
       url: "https://createapp.dev/",
