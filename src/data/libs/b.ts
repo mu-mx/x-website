@@ -183,6 +183,11 @@ const docs = {
       title: "jquery 文档",
       url: "https://jquery.cuishifeng.cn/",
     },
+    {
+      text: "w3cschool",
+      title: "w3cschool  java  js  ",
+      url: "https://www.w3cschool.cn/java/dict",
+    },
   ],
 };
 
