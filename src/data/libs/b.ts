@@ -467,10 +467,15 @@ const java = {
       text: "工具",
     },
     {
-      text: "json-sql-java",
+      text: "java-sql工具",
       title:
         "JSON生成Java实体类   SQL生成Java代码  JSON转C#实体类   mysql转Java实体类",
       url: "https://www.bejson.com/",
+    },
+    {
+      text: "json-sql工具",
+      title: "yupi   结构化 SQL 生成器",
+      url: "http://sql.yupi.icu/",
     },
   ],
 };
