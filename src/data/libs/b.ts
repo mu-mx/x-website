@@ -183,11 +183,6 @@ const docs = {
       title: "jquery 文档",
       url: "https://jquery.cuishifeng.cn/",
     },
-    {
-      text: "w3cschool",
-      title: "w3cschool  java  js  ",
-      url: "https://www.w3cschool.cn/java/dict",
-    },
   ],
 };
 
@@ -476,6 +471,11 @@ const java = {
       text: "json-sql工具",
       title: "yupi   结构化 SQL 生成器",
       url: "http://sql.yupi.icu/",
+    },
+    {
+      text: "w3cschool",
+      title: "w3cschool  java  js 详细api文档  常用",
+      url: "https://www.w3cschool.cn/java/dict",
     },
   ],
 };
