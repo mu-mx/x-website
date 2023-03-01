@@ -458,7 +458,24 @@ const tools = {
   ],
 };
 
+/* Java 工具集合 */
+const java = {
+  title: "Java 相关",
+  data: [
+    {
+      type: "line",
+      text: "工具",
+    },
+    {
+      text: "json-sql-java",
+      title:
+        "JSON生成Java实体类   SQL生成Java代码  JSON转C#实体类   mysql转Java实体类",
+      url: "https://www.bejson.com/",
+    },
+  ],
+};
 export default {
   docs,
   tools,
+  java,
 };
