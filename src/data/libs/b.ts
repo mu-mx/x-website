@@ -450,6 +450,11 @@ const tools = {
       title: "图片转文字在线 - 图片文字提取 - 网页OCR文字识别 - 白描网页版",
       url: "https://web.baimiaoapp.com/",
     },
+    {
+      text: "sublime激活",
+      title: "导入程序后，搜索80 38 00更改为FE 00 90(第一个匹配到的),保存下来就行",
+      url: "https://hexed.it/",
+    },
   ],
 };
 
@@ -479,6 +484,8 @@ const java = {
     },
   ],
 };
+
+
 export default {
   docs,
   tools,
