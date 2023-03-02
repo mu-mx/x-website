@@ -452,7 +452,8 @@ const tools = {
     },
     {
       text: "sublime激活",
-      title: "导入程序后，搜索80 38 00更改为FE 00 90(第一个匹配到的),保存下来就行",
+      title:
+        "导入程序后，搜索80 38 00更改为FE 00 90(第一个匹配到的),保存下来就行",
       url: "https://hexed.it/",
     },
   ],
@@ -479,12 +480,16 @@ const java = {
     },
     {
       text: "w3cschool",
-      title: "w3cschool  java  js 详细api文档  常用",
+      title: "w3cschool 文档",
       url: "https://www.w3cschool.cn/java/dict",
+    },
+    {
+      text: "apidocs",
+      title: "java  js 详细api文档  常用",
+      url: "https://tool.oschina.net/apidocs/apidoc?api=jdk-zh",
     },
   ],
 };
-
 
 export default {
   docs,
