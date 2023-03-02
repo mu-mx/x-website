@@ -22,7 +22,7 @@
       </ul>
       <el-empty v-else>
         <template v-slot:description>
-          <el-icon v-if="loading"><Loading /></el-icon>
+          <el-icon v-if="loading" size="64"><Loading /></el-icon>
           <span v-else>暂无数据</span>
         </template>
       </el-empty>
