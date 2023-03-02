@@ -1,24 +1,28 @@
 <template>
   <div class="fixed-wrap left">
-    <div @click="toggle">
+    <div @click="toggle" title="展开/收起">
       <el-icon>
         <Sort />
       </el-icon>
     </div>
 
-    <div @click="toggleDark()">
+    <div @click="toggleDark()" title="切换主题">
       <el-icon>
         <Moon />
       </el-icon>
     </div>
 
-    <div @click="drawer = true">
+    <div @click="drawer = true" title="设置">
       <el-icon>
         <Setting />
       </el-icon>
     </div>
 
-    <div @click="infoDrawer = true">
+    <div @click="chatDrawer = true" title="chatGPT聊天机器人">
+      <el-icon><ChatDotRound /></el-icon>
+    </div>
+
+    <div @click="infoDrawer = true" title="项目信息">
       <el-icon>
         <InfoFilled />
       </el-icon>
@@ -85,9 +89,12 @@
       </a>
     </p>
   </el-dialog>
+
+  <chatGpt v-model:infoDrawer="chatDrawer" />
 </template>
 
 <script setup lang="ts">
+import chatGpt from "./chatGpt.vue";
 import { computed, reactive, ref, watch } from "vue";
 import { toggleDark } from "~/composables";
 
@@ -105,6 +112,7 @@ const global = useGlobalStore();
 const allTabs = ref(0);
 const drawer = ref(false);
 const infoDrawer = ref(false);
+const chatDrawer = ref(false);
 const urlOpenType = ref(global.urlOpenType);
 const useFamily = ref(global.useFamily);
 
