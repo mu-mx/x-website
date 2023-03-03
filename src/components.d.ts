@@ -31,6 +31,7 @@ declare module '@vue/runtime-core' {
     ElSwitch: typeof import('element-plus/es')['ElSwitch']
     ElTag: typeof import('element-plus/es')['ElTag']
     ElTooltip: typeof import('element-plus/es')['ElTooltip']
+    Loading: typeof import('element-plus/es')['ElLoadingDirective']
     Search: typeof import('./components/section/search.vue')['default']
     Section: typeof import('./components/section/section.vue')['default']
     Time: typeof import('./components/time/time.vue')['default']

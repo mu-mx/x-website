@@ -10,7 +10,7 @@
       <ul v-if="lists.length">
         <li v-for="(item, index) in lists" :key="index">
           <div class="title">问：{{ item.title }}</div>
-          <div class="content">
+          <div class="content" v-loading="!item.content.length">
             <el-input
               v-model="item.content"
               autosize
@@ -20,19 +20,12 @@
           </div>
         </li>
       </ul>
-      <el-empty v-else>
-        <template v-slot:description>
-          <el-icon v-if="loading" size="64"><Loading /></el-icon>
-          <span v-else>暂无数据</span>
-        </template>
-      </el-empty>
+      <el-empty v-else />
     </div>
-
     <br />
     <br />
     <br />
     <br />
-
     <div class="question-input">
       <el-input
         v-model="question"
@@ -41,7 +34,6 @@
         placeholder="请输入问题"
         @keyup.enter.native="sendQuestion"
         style="width: 100%"
-
         maxlength="120"
         show-word-limit
       >
@@ -76,6 +68,14 @@ const sendQuestion = (param) => {
 };
 
 const request = (keyword) => {
+  const len = lists.value.length;
+  const newList = {
+    id: len + 1,
+    title: copyQuestion.value,
+    content: "",
+  };
+  lists.value = [...lists.value, newList];
+
   fetch("https://api.forchange.cn", {
     method: "POST",
     credentials: "include",
@@ -84,8 +84,15 @@ const request = (keyword) => {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      prompt: "Human:" + keyword + "\nAI:",
-      tokensLength: keyword.length,
+      // prompt: "Human:" + keyword + "\nAI:",
+      // tokensLength: keyword.length,
+      prompt: keyword,
+      model: "text-davinci-003",
+      maxTokens: 4096,
+      top_p: 1.0,
+      temperature: 0,
+      frequency_penalty: 0.0, // 控制语言模型中出现的词语频率，惩罚
+      presence_penalty: 0.0, // 控制语言模型中出现的词语频率，惩罚
     }),
   })
     .then((response) => {
@@ -98,14 +105,14 @@ const request = (keyword) => {
     })
     .then((response) => response.json())
     .then((result) => {
-      const len = lists.value.length;
-      const newList = {
-        id: len + 1,
-        title: copyQuestion.value,
-        content: result.choices[0].text,
-      };
+      lists.value = lists.value.map((item) => {
+        if (item.id === len + 1) {
+          item.content = result.choices[0].text;
+        }
+        return item;
+      });
+      // result.choices[0].text;
       loading.value = false;
-      lists.value = [...lists.value, newList];
     })
     .catch((error) => {
       console.log("error -> :", error);
@@ -147,10 +154,11 @@ const request = (keyword) => {
     .content {
       // background: #f5f2f3;
       font-size: 16px;
-      margin-bottom: 38px;
+      margin-bottom: 20px;
       // border-top: 1px solid #e2e2e2;
       padding: 8px;
       word-wrap: break-word;
+      min-height: 90px;
     }
   }
 
