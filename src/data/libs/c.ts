@@ -347,6 +347,10 @@ const vscode = {
 
   data: [
     {
+      text: "vscode下载",
+      url: "http://vscode.cdn.azure.cn/",
+    },
+    {
       text: "IntelliCode",
       url: "https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode",
     },
