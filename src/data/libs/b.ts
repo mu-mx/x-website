@@ -492,6 +492,11 @@ const java = {
       text: "apidocs",
       title: "java  js 详细api文档  常用",
       url: "https://tool.oschina.net/apidocs/apidoc?api=jdk-zh",
+    },    
+    {
+      text: "语言学习文档",
+      title: "书籍分类 - 记录分享，聚合链接知识。打破知识孤岛，链接创造价值。",
+      url: "https://geekdaxue.co/",
     },
   ],
 };
