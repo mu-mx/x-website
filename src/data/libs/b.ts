@@ -497,6 +497,11 @@ const java = {
       text: "语言学习文档",
       title: "书籍分类 - 记录分享，聚合链接知识。打破知识孤岛，链接创造价值。",
       url: "https://geekdaxue.co/",
+    }, 
+    {
+      text: "java路线",
+      title: "Java 学习路线",
+      url: "https://www.cnblogs.com/yupi/p/15166218.html",
     },
   ],
 };
