@@ -56,9 +56,10 @@ const mergeAllData = (val: any) => {
       if (!item.type) {
         data.push({
           ...item,
+          type: second.title,
+
           value: item.url,
           label: item.text,
-          type: second.title,
         });
       }
     });
@@ -72,28 +73,26 @@ const value = ref(undefined);
 const options = ref<any>([]);
 const loading = ref(false);
 
-
-const includes =  (data, searchTerm) => {
+const includes = (data: any, searchTerm: string) => {
   const results = [];
 
   for (let item of data) {
     if (
-      item.label.includes(searchTerm) ||
-      item.type.includes(searchTerm) ||
-      item.value.includes(searchTerm) ||
+      PinyinMatch.match(item.type, searchTerm) ||
       PinyinMatch.match(item.label, searchTerm) ||
-      PinyinMatch.match(item.type, searchTerm)
+      (item.text || "").includes(searchTerm) ||
+      (item.title || "").includes(searchTerm) ||
+      (item.url || "").includes(searchTerm)
     ) {
       results.push(item);
     }
   }
-
   return results;
-}
+};
 
 const remoteMethod = (query: string) => {
   if (query !== "") {
-    options.value = includes(list, query)
+    options.value = includes(list, query);
   } else {
     options.value = [];
   }
