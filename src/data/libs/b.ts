@@ -462,22 +462,22 @@ const tools = {
     }, 
     {
       text: "ph-code",
-      title:"chatGpt code版本  平替版本 不用fq 不用等待，支持联网搜索功能",
+      title:"chat gpt code版本  平替版本 不用fq 不用等待，支持联网搜索功能",
       url: "https://phind.com/",
     },
     {
       text: "ywsj.cf",
-      title:"chatgpt 国内免费 私人小站  开源的  经常409",
+      title:"chat gpt 国内免费 私人小站  开源的  经常409",
       url: "https://chatgpt.ywsj.cf/#/chat",
     },
     {
       text: "chatgpt私",
-      title:"chatgpt 私人小站 qq群 比较慢 不推荐",
+      title:"chat gpt 私人小站 qq群 比较慢 不推荐",
       url: "https://chat.qccq.cc/",
     },   
     {
       text: "xc.com",
-      title:"chatgpt 私人小站 反馈比较慢  打字机效果慢  不首先推荐",
+      title:"chat gpt 私人小站 反馈比较慢  打字机效果慢  不首先推荐",
       url: "https://xc.com/",
     },
   ],

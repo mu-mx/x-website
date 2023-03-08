@@ -79,11 +79,10 @@ const remoteMethod = (query: string) => {
       const typePinyin = PinyinMatch.match(item.type, query);
 
       return (
-        labelPinyin.length ||
-        typePinyin.length ||
         item?.label?.toLowerCase().includes(query.toLowerCase()) ||
         item?.type?.toLowerCase().includes(query.toLowerCase()) ||
-        item?.value?.toLowerCase().includes(query.toLowerCase())
+        item?.value?.toLowerCase().includes(query.toLowerCase()) ||
+        labelPinyin.length || typePinyin.length
       );
     });
   } else {
