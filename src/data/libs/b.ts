@@ -455,11 +455,25 @@ const tools = {
       title:
         "导入程序后，搜索80 38 00更改为FE 00 90(第一个匹配到的),保存下来就行",
       url: "https://hexed.it/",
-    },  
+    }, 
+    {
+      type: "line",
+      text: "chatGPT",
+    }, 
     {
       text: "phind-chatgpt",
       title:"chatGpt  平替版本 不用fq 不用等待，中文支持不好",
       url: "https://phind.com/",
+    },
+    {
+      text: "chatgpt国",
+      title:"chatgpt国内免费",
+      url: "https://chatgpt.ywsj.cf/#/chat",
+    },
+    {
+      text: "chatgpt私",
+      title:"chatgpt 私人小站 qq群 比较慢 不推荐",
+      url: "https://chat.qccq.cc/",
     },
   ],
 };
