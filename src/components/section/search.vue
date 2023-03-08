@@ -72,19 +72,28 @@ const value = ref(undefined);
 const options = ref<any>([]);
 const loading = ref(false);
 
+
+const includes =  (data, searchTerm) => {
+  const results = [];
+
+  for (let item of data) {
+    if (
+      item.label.includes(searchTerm) ||
+      item.type.includes(searchTerm) ||
+      item.value.includes(searchTerm) ||
+      PinyinMatch.match(item.label, searchTerm) ||
+      PinyinMatch.match(item.type, searchTerm)
+    ) {
+      results.push(item);
+    }
+  }
+
+  return results;
+}
+
 const remoteMethod = (query: string) => {
   if (query !== "") {
-    options.value = list.filter((item: any) => {
-      const labelPinyin = PinyinMatch.match(item.label, query);
-      const typePinyin = PinyinMatch.match(item.type, query);
-
-      return (
-        item?.label?.toLowerCase().includes(query.toLowerCase()) ||
-        item?.type?.toLowerCase().includes(query.toLowerCase()) ||
-        item?.value?.toLowerCase().includes(query.toLowerCase()) ||
-        labelPinyin.length || typePinyin.length
-      );
-    });
+    options.value = includes(list, query)
   } else {
     options.value = [];
   }
