@@ -480,6 +480,11 @@ const tools = {
       title:"chat gpt 私人小站 反馈比较慢  打字机效果慢  不首先推荐",
       url: "https://xc.com/",
     },
+    {
+      text: "mossai",
+      title:"MossAI chat ",
+      url: "https://chat.mossai.me/#/chat",
+    },
   ],
 };
 
