@@ -76,76 +76,49 @@ const request = (keyword) => {
   };
   lists.value = [...lists.value, newList];
 
-  axios({
-    url: "https://cbjtestapi.binjie.site:7777/api/generateStream",
+  fetch("https://api.forchange.cn", {
     method: "POST",
+    credentials: "include",
     headers: {
-      Accept: "application/json",
+      // Accept: "application/json",
       "Content-Type": "application/json",
-      referer: "https://chat.binjie.site:7777/",
     },
-    responseType: "stream",
-    mode: "no-cors",
-    data: JSON.stringify({
+    body: JSON.stringify({
+      // prompt: "Human:" + keyword + "\nAI:",
+      // tokensLength: keyword.length,
       prompt: keyword,
-      userId: "",
-      network: false,
+      model: "text-davinci-003",
+      maxTokens: 4096,
+      top_p: 1.0,
+      temperature: 0,
+      frequency_penalty: 0.0, // 控制语言模型中出现的词语频率，惩罚
+      presence_penalty: 0.0, // 控制语言模型中出现的词语频率，惩罚
     }),
-  }).then((res) => {
-    const stream = res.data;
-
-    lists.value = lists.value.map((item) => {
-      if (item.id === len + 1) {
-        item.content = stream;
+  })
+    .then((response) => {
+      // network failure, request prevented
+      if (response.status >= 200 && response.status < 300) {
+        return Promise.resolve(response);
       }
-      return item;
+
+      return Promise.reject(new Error(response.statusText));
+    })
+    .then((response) => response.json())
+    .then((result) => {
+      lists.value = lists.value.map((item) => {
+        if (item.id === len + 1) {
+          item.content = result.choices[0].text;
+        }
+        return item;
+      });
+      // result.choices[0].text;
+      loading.value = false;
+    })
+    .catch((error) => {
+      console.log("error -> :", error);
+      // common error
+      return null;
     });
-    loading.value = false;
-  });
-
-  // fetch("https://api.forchange.cn", {
-  //   method: "POST",
-  //   credentials: "include",
-  //   headers: {
-  //     // Accept: "application/json",
-  //     "Content-Type": "application/json",
-  //   },
-  //   body: JSON.stringify({
-  //     // prompt: "Human:" + keyword + "\nAI:",
-  //     // tokensLength: keyword.length,
-  //     prompt: keyword,
-  //     model: "text-davinci-003",
-  //     maxTokens: 4096,
-  //     top_p: 1.0,
-  //     temperature: 0,
-  //     frequency_penalty: 0.0, // 控制语言模型中出现的词语频率，惩罚
-  //     presence_penalty: 0.0, // 控制语言模型中出现的词语频率，惩罚
-  //   }),
-  // })
-  //   .then((response) => {
-  //     // network failure, request prevented
-  //     if (response.status >= 200 && response.status < 300) {
-  //       return Promise.resolve(response);
-  //     }
-
-  //     return Promise.reject(new Error(response.statusText));
-  //   })
-  //   .then((response) => response.json())
-  //   .then((result) => {
-  //     lists.value = lists.value.map((item) => {
-  //       if (item.id === len + 1) {
-  //         item.content = result.choices[0].text;
-  //       }
-  //       return item;
-  //     });
-  //     // result.choices[0].text;
-  //     loading.value = false;
-  //   })
-  //   .catch((error) => {
-  //     console.log("error -> :", error);
-  //     // common error
-  //     return null;
-  //   });
 };
 </script>
 

@@ -8,6 +8,7 @@ declare module '@vue/runtime-core' {
     BaseHeader: typeof import('./components/layouts/BaseHeader.vue')['default']
     BaseSide: typeof import('./components/layouts/BaseSide.vue')['default']
     ChatGpt: typeof import('./components/drawer/chatGpt.vue')['default']
+    'ChatGpt copy': typeof import('./components/drawer/chatGpt copy.vue')['default']
     Drawer: typeof import('./components/drawer/drawer.vue')['default']
     ElBacktop: typeof import('element-plus/es')['ElBacktop']
     ElButton: typeof import('element-plus/es')['ElButton']

@@ -374,6 +374,11 @@ const tools = {
       text: "华为镜像",
       title: "华为开源镜像站_软件开发服务_华为云",
       url: "https://mirrors.huaweicloud.com/",
+    },    
+    {
+      text: "jdk下载",
+      title: "jdk下载",
+      url: "https://www.injdk.cn/",
     },
     {
       text: "mongo下载",
@@ -484,6 +489,26 @@ const tools = {
       text: "mossai",
       title:"MossAI chat ",
       url: "https://chat.mossai.me/#/chat",
+    },
+    {
+      text: "yqcloudchat",
+      title:"yqcloud chat 支持开启关闭联网模式",
+      url: "https://chat.yqcloud.top/#/chat/",
+    },
+    {
+      text: "binjiechat",
+      title:"binjie chat 支持开启关闭联网模式",
+      url: "https://chat.binjie.site:7777/#/chat/",
+    },
+    {
+      text: "tool00",
+      title:"本站提供的是访问OPENAI研发的CHATGPT聊天机器人的能力，完全免费，解决在中国访问CHATGPT服务困难的问题",
+      url: "https://gpt.tool00.com/",
+    },
+    {
+      text: "geekctf",
+      title:"zhuxindong chat api_key费用由本人承担，如果你觉得对你有帮助并且条件允许的话，可以给我买一瓶冰阔落。",
+      url: "https://chat.geekctf.cf/#/chat",
     },
   ],
 };
