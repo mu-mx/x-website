@@ -471,29 +471,14 @@ const tools = {
       url: "https://phind.com/",
     },
     {
-      text: "ywsj.cf",
-      title:"chat gpt 国内免费 私人小站  开源的  经常409",
-      url: "https://chatgpt.ywsj.cf/#/chat",
-    },
-    {
       text: "chatgpt私",
       title:"chat gpt 私人小站 qq群 比较慢 不推荐",
       url: "https://chat.qccq.cc/",
     },   
     {
-      text: "xc.com",
-      title:"chat gpt 私人小站 反馈比较慢  打字机效果慢  不首先推荐",
-      url: "https://xc.com/",
-    },
-    {
       text: "mossai",
       title:"MossAI chat ",
       url: "https://chat.mossai.me/#/chat",
-    },
-    {
-      text: "yqcloudchat",
-      title:"yqcloud chat 支持开启关闭联网模式",
-      url: "https://chat.yqcloud.top/#/chat/",
     },
     {
       text: "binjiechat",
@@ -501,14 +486,19 @@ const tools = {
       url: "https://chat.binjie.site:7777/#/chat/",
     },
     {
-      text: "tool00",
-      title:"本站提供的是访问OPENAI研发的CHATGPT聊天机器人的能力，完全免费，解决在中国访问CHATGPT服务困难的问题",
-      url: "https://gpt.tool00.com/",
-    },
-    {
       text: "geekctf",
       title:"zhuxindong chat api_key费用由本人承担，如果你觉得对你有帮助并且条件允许的话，可以给我买一瓶冰阔落。",
       url: "https://chat.geekctf.cf/#/chat",
+    },
+    {
+      text: "toolkit",
+      title:"欢迎进交流反馈群，解锁更多prompt玩法",
+      url: "https://ai.toolkit.show/",
+    },
+    {
+      text: "wolai",
+      title:"chat gpt 共享账号",
+      url: "https://www.wolai.com/9EAdjRYzRB5fL975RTfk3b",
     },
   ],
 };
