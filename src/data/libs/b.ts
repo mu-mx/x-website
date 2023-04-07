@@ -466,6 +466,11 @@ const tools = {
       text: "chatGPT",
     }, 
     {
+      text: "poe",
+      title:"poe 国外机器人网站  需要翻墙",
+      url: "https://poe.com/ChatGPT",
+    },
+    {
       text: "ph-code",
       title:"chat gpt code版本  平替版本 不用fq 不用等待，支持联网搜索功能",
       url: "https://phind.com/",
@@ -500,6 +505,7 @@ const tools = {
       title:"chat gpt 共享账号",
       url: "https://www.wolai.com/9EAdjRYzRB5fL975RTfk3b",
     },
+
   ],
 };
 
