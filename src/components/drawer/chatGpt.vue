@@ -34,7 +34,7 @@
         placeholder="请输入问题"
         @keyup.enter.native="sendQuestion"
         style="width: 100%"
-        maxlength="120"
+        maxlength="500"
         show-word-limit
       >
         <template #append>
@@ -82,9 +82,6 @@ const request = (keyword) => {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      ":authority": "api.aichatos.cloud",
-      ":path": "/api/generateStream",
-      ":scheme": "https",
     },
     responseType: "stream",
     mode: "no-cors",
