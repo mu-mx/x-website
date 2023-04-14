@@ -77,12 +77,14 @@ const request = (keyword) => {
   lists.value = [...lists.value, newList];
 
   axios({
-    url: "https://cbjtestapi.binjie.site:7777/api/generateStream",
+    // url: "https://cbjtestapi.binjie.site:7777/api/generateStream",
+    url: "https://api.aichatos.cloud/api/generateStream",
     method: "POST",
     headers: {
-      Accept: "application/json",
       "Content-Type": "application/json",
-      referer: "https://chat.binjie.site:7777/",
+      ":authority": "api.aichatos.cloud",
+      ":path": "/api/generateStream",
+      ":scheme": "https",
     },
     responseType: "stream",
     mode: "no-cors",
