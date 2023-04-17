@@ -374,7 +374,7 @@ const tools = {
       text: "华为镜像",
       title: "华为开源镜像站_软件开发服务_华为云",
       url: "https://mirrors.huaweicloud.com/",
-    },    
+    },
     {
       text: "jdk下载",
       title: "jdk下载",
@@ -460,52 +460,65 @@ const tools = {
       title:
         "导入程序后，搜索80 38 00更改为FE 00 90(第一个匹配到的),保存下来就行",
       url: "https://hexed.it/",
-    }, 
+    },
     {
       type: "line",
       text: "chatGPT",
-    }, 
+    },
     {
       text: "poe",
-      title:"poe 国外机器人网站  需要翻墙",
+      title: "poe 国外机器人网站  需要翻墙",
       url: "https://poe.com/ChatGPT",
     },
     {
       text: "ph-code",
-      title:"chat gpt code版本  平替版本 不用fq 不用等待，支持联网搜索功能",
+      title: "chat gpt code版本  平替版本 不用fq 不用等待，支持联网搜索功能",
       url: "https://phind.com/",
     },
     {
       text: "chatgpt私",
-      title:"chat gpt 私人小站 qq群 比较慢 不推荐",
-      url: "https://chat.qccq.cc/",
-    },   
+      title: "QQ群的 chat gpt 私人小站 qq群 比较慢 不推荐 要登陆了  开始收费",
+      url: "https://qccq.cc/",
+    },
     {
       text: "mossai",
-      title:"MossAI chat ",
+      title: "MossAI chat ",
       url: "https://chat.mossai.me/#/chat",
     },
     {
-      text: "binjiechat",
-      title:"binjie chat 支持开启关闭联网模式",
-      url: "https://chat.binjie.site:7777/#/chat/",
-    },
-    {
       text: "geekctf",
-      title:"zhuxindong chat api_key费用由本人承担，如果你觉得对你有帮助并且条件允许的话，可以给我买一瓶冰阔落。",
-      url: "https://chat.geekctf.cf/#/chat",
+      title:
+        "域名被dns污染，最新域名是  无任何群，无任何套路，最新永久域名https://chat.geekgpt.site/ ",
+      // url: "https://chat.geekctf.cf/#/chat",
+      url: "https://chat.geekgpt.site/#/chat/1002",
     },
     {
-      text: "toolkit",
-      title:"欢迎进交流反馈群，解锁更多prompt玩法",
-      url: "https://ai.toolkit.show/",
+      text: "aichatos",
+      title:
+        "永久免费用于学习和测试，支持上下文，支持开启关闭联网模式，支持保存会话 不行就+1",
+      url: "https://chat4.aichatos.com",
     },
     {
-      text: "wolai",
-      title:"chat gpt 共享账号",
-      url: "https://www.wolai.com/9EAdjRYzRB5fL975RTfk3b",
+      text: "supremes",
+      title: "Based on OpenAI API (gpt-3.5-turbo)基于全球墨菲特大脑总算力开发.",
+      url: "https://supremes.pro/",
     },
 
+    // {
+    //   text: "binjiechat",
+    //   title: "binjie chat 支持开启关闭联网模式",
+    //   url: "https://chat.binjie.site:7777/#/chat/",
+    // },
+    // {
+    //   text: "toolkit",
+    //   title:"欢迎进交流反馈群，解锁更多prompt玩法",
+    //   url: "https://ai.toolkit.show/",
+    // },
+    // {
+    //   text: "wolai",
+    //   title:"chat gpt 共享账号",
+    //   url: "https://www.wolai.com/9EAdjRYzRB5fL975RTfk3b",
+    // },
   ],
 };
 
@@ -537,12 +550,12 @@ const java = {
       text: "apidocs",
       title: "java  js 详细api文档  常用",
       url: "https://tool.oschina.net/apidocs/apidoc?api=jdk-zh",
-    },    
+    },
     {
       text: "语言学习文档",
       title: "书籍分类 - 记录分享，聚合链接知识。打破知识孤岛，链接创造价值。",
       url: "https://geekdaxue.co/",
-    }, 
+    },
     {
       text: "java路线",
       title: "Java 学习路线",
