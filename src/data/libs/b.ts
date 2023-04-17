@@ -503,6 +503,11 @@ const tools = {
       title: "Based on OpenAI API (gpt-3.5-turbo)基于全球墨菲特大脑总算力开发.",
       url: "https://supremes.pro/",
     },
+    {
+      text: "prompts",
+      title: "Chatgpt 常用prompt  来自GITHUB: ChatGPT 中文调教指南",
+      url: "https://github.com/PlexPt/awesome-chatgpt-prompts-zh/blob/main/prompts-zh.json",
+    },
 
     // {
     //   text: "binjiechat",
@@ -524,7 +529,7 @@ const tools = {
 
 /* Java 工具集合 */
 const java = {
-  title: "Java 相关",
+  title: "Java",
   data: [
     {
       type: "line",
@@ -540,6 +545,15 @@ const java = {
       text: "json-sql工具",
       title: "yupi   结构化 SQL 生成器",
       url: "http://sql.yupi.icu/",
+    },
+    {
+      type: "line",
+      text: "文档",
+    },
+    {
+      text: "stream",
+      title: "Java 学习 stream ",
+      url: "https://github.com/winterbe/java8-tutorial/blob/master/src/com/winterbe/java8/samples/stream/Streams7.java",
     },
     {
       text: "w3cschool",
