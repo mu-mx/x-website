@@ -492,6 +492,7 @@ const tools = {
       // url: "https://chat.geekctf.cf/#/chat",
       url: "https://chat.geekgpt.site/#/chat/1002",
     },
+
     {
       text: "aichatos",
       title:
@@ -503,6 +504,23 @@ const tools = {
       title: "Based on OpenAI API (gpt-3.5-turbo)基于全球墨菲特大脑总算力开发.",
       url: "https://supremes.pro/",
     },
+
+    {
+      text: "qdymys",
+      title: "小站 先观察到",
+      url: "https://chatgpt.qdymys.cn/#/chat/1002",
+    },
+    {
+      text: "chatgpt-cn",
+      title: "每天可免费使用500个Token（约250个中文）",
+      url: "https://chatgpt-cn.co/",
+    },
+    {
+      text: "chatgpt org",
+      title: "每天 15 条记录",
+      url: "https://chatgpt.org/chat",
+    },
+
     {
       text: "prompts",
       title: "Chatgpt 常用prompt  来自GITHUB: ChatGPT 中文调教指南",
