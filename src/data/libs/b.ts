@@ -500,9 +500,9 @@ const tools = {
       url: "https://chat4.aichatos.com",
     },
     {
-      text: "supremes",
+      text: "sishuokeji",
       title: "Based on OpenAI API (gpt-3.5-turbo)基于全球墨菲特大脑总算力开发.",
-      url: "https://supremes.pro/",
+      url: "https://sishuokeji.com/",
     },
 
     {
