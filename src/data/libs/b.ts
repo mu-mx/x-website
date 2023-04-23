@@ -510,7 +510,7 @@ const tools = {
       url: "https://hello-ai.anzz.top/",
     },
     {
-      text: "Hello-AI",
+      text: "chat0",
       title:
         "本网站各域名经常被封  https://cdn.muspimerol.site/%E6%9C%80%E6%96%B0%E5%9F%9F%E5%90%8D.html ",
       url: "https://chat0.bnu120.space/",
