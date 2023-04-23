@@ -485,11 +485,11 @@ const tools = {
       title: "MossAI chat ",
       url: "https://chat.mossai.me/#/chat",
     },
-    {
-      text: "free.top",
-      title: "free.anzz.top  vpn 可访问 ",
-      url: "https://free.anzz.top/#/chat/1002",
-    },
+    // {
+    //   text: "free.top",
+    //   title: "free.anzz.top  vpn 可访问 ",
+    //   url: "https://free.anzz.top/#/chat/1002",
+    // },
     {
       text: "geekctf",
       title:
@@ -527,10 +527,10 @@ const tools = {
     },
     {
       text: "xcbl",
-      title: "老北鼻AI AI工具集 导航 近期，用户访问量激增，官方大量处理账号，可能导致网站不稳定、 网页崩溃等情况",
+      title:
+        "老北鼻AI AI工具集 导航 近期，用户访问量激增，官方大量处理账号，可能导致网站不稳定、 网页崩溃等情况",
       url: "https://gpt.xcbl.cc/",
     },
-
 
     {
       text: "qdymys",
