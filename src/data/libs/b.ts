@@ -486,6 +486,11 @@ const tools = {
       url: "https://chat.mossai.me/#/chat",
     },
     {
+      text: "free.top",
+      title: "free.anzz.top  vpn 可访问 ",
+      url: "https://free.anzz.top/#/chat/1002",
+    },
+    {
       text: "geekctf",
       title:
         "域名被dns污染，最新域名是  无任何群，无任何套路，最新永久域名https://chat.geekgpt.site/ ",
@@ -500,10 +505,27 @@ const tools = {
       url: "https://chat4.aichatos.com",
     },
     {
-      text: "sishuokeji",
-      title: "Based on OpenAI API (gpt-3.5-turbo)基于全球墨菲特大脑总算力开发.",
-      url: "https://sishuokeji.com/",
+      text: "Hello-AI",
+      title: "这个是个帮助自己链接到广阔AI世界的项目，也希望能帮助到你",
+      url: "https://hello-ai.anzz.top/",
     },
+    {
+      text: "Hello-AI",
+      title:
+        "本网站各域名经常被封  https://cdn.muspimerol.site/%E6%9C%80%E6%96%B0%E5%9F%9F%E5%90%8D.html ",
+      url: "https://chat0.bnu120.space/",
+    },
+    {
+      text: "chatbot",
+      title: "vpn 可访问",
+      url: "https://chatbot.theb.ai/#/chat",
+    },
+    {
+      text: "chat-vip",
+      title: "vpn 可访问 chat-vip",
+      url: "https://cool-js.com/ai/chat-vip/index.html#/",
+    },
+
 
     {
       text: "qdymys",
@@ -528,15 +550,24 @@ const tools = {
     },
 
     // {
+    //   text: "sishuokeji",
+    //   title: "Based on OpenAI API (gpt-3.5-turbo)基于全球墨菲特大脑总算力开发.",
+    //   url: "https://sishuokeji.com/",
+    //   url: "https://supremes.pro/",
+    // },
+
+    // {
     //   text: "binjiechat",
     //   title: "binjie chat 支持开启关闭联网模式",
     //   url: "https://chat.binjie.site:7777/#/chat/",
     // },
+
     // {
     //   text: "toolkit",
     //   title:"欢迎进交流反馈群，解锁更多prompt玩法",
     //   url: "https://ai.toolkit.show/",
     // },
+
     // {
     //   text: "wolai",
     //   title:"chat gpt 共享账号",
