@@ -525,6 +525,11 @@ const tools = {
       title: "vpn 可访问 chat-vip",
       url: "https://cool-js.com/ai/chat-vip/index.html#/",
     },
+    {
+      text: "xcbl",
+      title: "老北鼻AI AI工具集 导航 近期，用户访问量激增，官方大量处理账号，可能导致网站不稳定、 网页崩溃等情况",
+      url: "https://gpt.xcbl.cc/",
+    },
 
 
     {
