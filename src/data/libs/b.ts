@@ -554,6 +554,12 @@ const tools = {
       url: "https://github.com/PlexPt/awesome-chatgpt-prompts-zh/blob/main/prompts-zh.json",
     },
 
+    {
+      text: "调教gpt",
+      title: "160 多种 prompt 提示词指令合集",
+      url: "https://www.bytearch.com/questions/ai/",
+    },
+
     // {
     //   text: "sishuokeji",
     //   title: "Based on OpenAI API (gpt-3.5-turbo)基于全球墨菲特大脑总算力开发.",
