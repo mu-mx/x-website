@@ -538,14 +538,21 @@ const tools = {
       url: "https://chatgpt.qdymys.cn/#/chat/1002",
     },
     {
-      text: "chatgpt-cn",
-      title: "每天可免费使用500个Token（约250个中文）",
-      url: "https://chatgpt-cn.co/",
+      text: "aidutu",
+      title: "请收藏我们的备用网址：https://chat.bk8787.com",
+      url: "https://chat.aidutu.cn/",
     },
     {
-      text: "chatgpt org",
-      title: "每天 15 条记录",
-      url: "https://chatgpt.org/chat",
+      text: "binjie",
+      title:
+        "国内备案不封链接：https://chat.jinshutuan.com/（稳定但有严格内容审查，若要分享到国内或微信分享请用此链接） 最新网站存活（无审查且不稳定勿分享）: https://chat2.aichatos.top/",
+      url: "https://chat.jinshutuan.com/",
+    },
+    {
+      text: "wuguokai",
+      title:
+        "ChatGPT使用指南 由于政策问题，国内加速镜像有可能随时不可用，请收藏保存备用域名！！！",
+      url: "http://doc.wuguokai.cn/s/xPq1iNw_v",
     },
 
     {
