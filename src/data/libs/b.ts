@@ -533,6 +533,22 @@ const tools = {
     },
 
     {
+      text: "easyai",
+      title: "Easy AI 功能列表，更多功能正在火速开发中",
+      url: "http://easyai.one/chat",
+    },
+    {
+      text: "2dog",
+      title: "2dog",
+      url: "https://2dog.51mskd.com/chat#",
+    },
+    {
+      text: "vppp.cn",
+      title:
+        "本站最新域名 http://www.vppp.cn 。 请务必加群，否则域名被封会找不到本站。",
+      url: "http://www.vppp.cn",
+    },
+    {
       text: "qdymys",
       title: "小站 先观察到",
       url: "https://chatgpt.qdymys.cn/#/chat/1002",
