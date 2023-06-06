@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "scripts": {
+    "build:pro": "turbo run build:pro",
+    "build:pre": "turbo run build:pre",
+    "dev": "turbo run dev"
+  },
+  "devDependencies": {
+    "@turbo/gen": "^1.9.7",
+    "turbo": "^1.9.7"
+  },
+  "packageManager": "pnpm@8.5.0",
+  "name": "x-web-gitee",
+  "dependencies": {
+    "prettier": "^2.8.8"
+  }
+}
