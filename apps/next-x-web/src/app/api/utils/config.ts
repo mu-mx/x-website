@@ -1,5 +1,5 @@
 /** 成功返回 */
-export const successBody = (data, code = 200, msg = 'success') =>
+export const successBody = (data: any, code = 200, msg = 'success') =>
   JSON.stringify({
     data,
     code,
