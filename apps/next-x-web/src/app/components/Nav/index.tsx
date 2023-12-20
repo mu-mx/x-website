@@ -15,6 +15,8 @@ import {
 
 import { SearchOutlined, CaretRightOutlined } from '@ant-design/icons';
 
+import data from './data.json';
+
 type TabPosition = 'left' | 'right' | 'top' | 'bottom';
 
 const text = `
@@ -28,17 +30,27 @@ const getItems = (panelStyle: any) => [
     label: 'This is panel header 1',
     children: (
       <>
-        <Card style={{ width: 300 }}>
-          <Avatar
-            style={{
-              verticalAlign: 'middle',
-            }}
-            size="large"
-          >
-            aaaa
-          </Avatar>
-          165165161651
-        </Card>
+        <Row gutter={[10, 16]}>
+          {(data as any).children.map((it: any, index: number) => (
+            <Col xs={24} sm={24} md={12} lg={8} xl={6} xxl={4} key={index}>
+              <Card
+                bodyStyle={{
+                  padding: '12px 8px',
+                }}
+              >
+                <Avatar
+                  style={{
+                    verticalAlign: 'middle',
+                  }}
+                  size="large"
+                >
+                  aaaa
+                </Avatar>
+                165165161651
+              </Card>
+            </Col>
+          ))}
+        </Row>
       </>
     ),
     style: panelStyle,
@@ -87,12 +99,12 @@ export default function Index() {
     console.log(`selected ${value}`);
   };
 
-  const [mode, setMode] = React.useState<TabPosition>('left');
+  const [mode, setMode] = React.useState<TabPosition>('top');
 
   return (
     <>
       <Row>
-        <Col span={16} offset={4}>
+        <Col span={18} offset={3}>
           <Card
             title="dao hang"
             className="h-full "
@@ -130,8 +142,7 @@ export default function Index() {
             <Tabs
               defaultActiveKey="1"
               tabPosition={mode}
-              style={{
-              }}
+              style={{}}
               items={new Array(30).fill(null).map((_, i) => {
                 const id = String(i);
                 return {
