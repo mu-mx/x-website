@@ -14,8 +14,7 @@ const fetcher = (...args: Parameters<typeof fetch>) =>
 
 
 export default function Page() {
-  const { data, error, isLoading } = useSWR('/api/website', fetcher);
-  console.log('data - >:', data);
+  // const { data, error, isLoading } = useSWR('/api/website', fetcher);
 
   return (
     <>

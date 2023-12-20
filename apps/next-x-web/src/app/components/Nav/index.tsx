@@ -11,106 +11,44 @@ import {
   theme,
   Avatar,
   Radio,
+  Tooltip,
+  FloatButton,
 } from 'antd';
 
-import { SearchOutlined, CaretRightOutlined } from '@ant-design/icons';
+import type { TabsProps } from 'antd';
+
+import StickyBox from 'react-sticky-box';
+
+import CardItem from './CardItem';
 
 import data from './data.json';
 
 type TabPosition = 'left' | 'right' | 'top' | 'bottom';
 
-const text = `
-  A dog is a type of domesticated animal.
-  Known for its loyalty and faithfulness,
-  it can be found as a welcome guest in many households across the world.
-`;
-const getItems = (panelStyle: any) => [
-  {
-    key: '1',
-    label: 'This is panel header 1',
-    children: (
-      <>
-        <Row gutter={[10, 16]}>
-          {(data as any).children.map((it: any, index: number) => (
-            <Col xs={24} sm={24} md={12} lg={8} xl={6} xxl={4} key={index}>
-              <Card
-                bodyStyle={{
-                  padding: '12px 8px',
-                }}
-              >
-                <Avatar
-                  style={{
-                    verticalAlign: 'middle',
-                  }}
-                  size="large"
-                >
-                  aaaa
-                </Avatar>
-                165165161651
-              </Card>
-            </Col>
-          ))}
-        </Row>
-      </>
-    ),
-    style: panelStyle,
-  },
-  {
-    key: '2',
-    label: 'This is panel header 2',
-    children: <p>{text}</p>,
-    style: panelStyle,
-  },
-  {
-    key: '3',
-    label: 'This is panel header 3',
-    children: <p>{text}</p>,
-    style: panelStyle,
-  },
-];
-
-function Item() {
-  const { token } = theme.useToken();
-
-  const panelStyle = {
-    marginBottom: 24,
-    background: token.colorFillAlter,
-    borderRadius: token.borderRadiusLG,
-    border: 'none',
-  };
-
-  return (
-    <Collapse
-      bordered={false}
-      defaultActiveKey={['1']}
-      expandIcon={({ isActive }) => (
-        <CaretRightOutlined rotate={isActive ? 90 : 0} />
-      )}
-      style={{
-        background: token.colorBgContainer,
-      }}
-      items={getItems(panelStyle)}
-    />
-  );
-}
-
 export default function Index() {
-  const handleChange = (value: string) => {
-    console.log(`selected ${value}`);
-  };
-
   const [mode, setMode] = React.useState<TabPosition>('top');
+
+  const {
+    token: { colorBgContainer },
+  } = theme.useToken();
+
+  const renderTabBar: TabsProps['renderTabBar'] = (props, DefaultTabBar) => (
+    <StickyBox offsetTop={0} offsetBottom={20} style={{ zIndex: 1 }}>
+      <DefaultTabBar {...props} style={{ background: colorBgContainer }} />
+    </StickyBox>
+  );
 
   return (
     <>
       <Row>
-        <Col span={18} offset={3}>
+        <Col span={20} offset={2}>
           <Card
             title="dao hang"
-            className="h-full "
+            className="daohang-body h-full"
             bodyStyle={{
-              padding: '40px 12px',
+              padding: '0 12px 8px',
               overflowY: 'auto',
+              height: '680px',
             }}
             headStyle={{
               padding: '8px 12px',
@@ -124,12 +62,16 @@ export default function Index() {
                     value: 'left',
                   },
                   {
+                    label: '右',
+                    value: 'right',
+                  },
+                  {
                     label: '上',
                     value: 'top',
                   },
                   {
-                    label: '右',
-                    value: 'right',
+                    label: '下',
+                    value: 'bottom',
                   },
                 ]}
                 onChange={({ target: { value } }) => {
@@ -140,19 +82,33 @@ export default function Index() {
             }
           >
             <Tabs
-              defaultActiveKey="1"
+              defaultActiveKey="0"
+              indicatorSize={30}
+              renderTabBar={mode === 'top' ? renderTabBar : undefined}
+              centered={mode === 'bottom'}
               tabPosition={mode}
-              style={{}}
-              items={new Array(30).fill(null).map((_, i) => {
+              destroyInactiveTabPane={true}
+              tabBarGutter={12}
+              items={data.map((_, i) => {
                 const id = String(i);
                 return {
-                  label: `Tab-${id}`,
+                  label: `${_.title}`,
                   key: id,
-                  children: <Item />,
+                  children: <CardItem data={_.children || []} />,
                 };
               })}
             />
           </Card>
+          <FloatButton.BackTop
+            style={{
+              right: '12%',
+              bottom: '35%',
+            }}
+            visibilityHeight={0}
+            target={() =>
+              document.querySelector('.daohang-body .ant-card-body') as any
+            }
+          />
         </Col>
       </Row>
     </>

@@ -1,91 +1,189 @@
 [
- {
-  "title": "热门工具",
-  "children": [
-   {
-    "url": "https://xiezuocat.com?s=tbox",
-    "desc": "AI智能写作辅助神器",
-    "icon": "https://www.tboxn.com/wp-content/uploads/2022/08/xiezuomao.png",
-    "title": "秘塔写作猫"
-   },
-   {
-    "url": "https://tusiart.com/?utm_source=box&source_id=box",
-    "desc": "AI 绘画模型分享社区和在线运行平台",
-    "icon": "https://www.tboxn.com/wp-content/uploads/2023/12/tusi.png",
-    "title": "吐司"
-   },
-   {
-    "url": "https://88lingo.com/ai?utm_id=591",
-    "desc": "在线安全的灵感收集、思路整理笔记工具",
-    "icon": "https://www.tboxn.com/wp-content/uploads/2023/12/微信图片_20231215234553.jpg",
-    "title": "灵构AI笔记"
-   },
-   {
-    "url": "https://pdf.wondershare.cn/gn-1.html?utm_source=tboxn&utm_medium=referral&utm_campaign=daohang&utm_content=link_2023-09-19",
-    "desc": "免费PDF编辑神器",
-    "icon": "https://www.tboxn.com/wp-content/uploads/2023/03/微信图片_20230330235357.jpg",
-    "title": "万兴PDF"
-   },
-   {
-    "url": "https://smartread.cc/",
-    "desc": "免费/无广告/界面干净",
-    "icon": "https://www.tboxn.com/wp-content/uploads/2023/09/微信图片_20230904110549.jpg",
-    "title": "AI读报告/论文/合同"
-   },
-   {
-    "url": "https://chatgai.lovepor.cn/",
-    "desc": "基于ChatGPT接口开发的AI写作、问答、聊天、翻译多功能AI工具！",
-    "icon": "https://www.tboxn.com/wp-content/uploads/2023/11/head_logo_3x.png",
-    "title": "ChatGAi"
-   },
-   {
-    "url": "https://virbo.wondershare.cn/app/",
-    "desc": "AI数字人短视频在线创作平台",
-    "icon": "https://www.tboxn.com/wp-content/uploads/2023/12/万兴播报.png",
-    "title": "万兴播爆"
-   },
-   {
-    "url": "https://zh.z-library.se/",
-    "desc": "全球最大的数字图书馆",
-    "icon": "https://www.tboxn.com/wp-content/uploads/2022/02/图书-1.png",
-    "title": "Zlibrary"
-   },
-   {
-    "url": "https://www.maxiaobang.com/superbookmark",
-    "desc": "浏览器书签也能变超级工具",
-    "icon": "https://www.tboxn.com/wp-content/uploads/2022/01/icon_c_书签_绿.png",
-    "title": "超级书签"
-   },
-   {
-    "url": "http://qr61.cn/o4gvGR/qXagS2I",
-    "desc": "每日分享淘宝/京东一手优惠信息",
-    "icon": "https://www.tboxn.com/wp-content/uploads/2022/02/30元优惠券-.png",
-    "title": "淘宝京东线报福利群"
-   },
-   {
-    "url": "https://www.maxiaobang.com/",
-    "desc": "专注互联网经验分享",
-    "icon": "https://www.tboxn.com/wp-content/uploads/2022/01/微信图片_20220114020109.jpg",
-    "title": "马小帮博客"
-   },
-   {
-    "url": "https://www.yougengwa.com/",
-    "desc": "十万个梗百科知识库，网络流行用语",
-    "icon": "https://www.tboxn.com/wp-content/uploads/2023/09/yougengwa-log.png",
-    "title": "有梗蛙"
-   },
-   {
-    "url": "https://www.maxiaobang.com/12476.html",
-    "desc": "HEU_KMS_Activator ：支持 Windows/Office 永久激活",
-    "icon": "https://www.tboxn.com/wp-content/uploads/2022/01/圆形-3.png",
-    "title": "Windows/Office激活"
-   },
-   {
-    "url": "https://tool.maxiaobang.com/idm/",
-    "desc": "可将下载速度提高5倍的神器",
-    "icon": "https://www.tboxn.com/wp-content/uploads/2022/01/unnamed.jpg",
-    "title": "IDM多线程下载器"
-   }
-  ]
- }
+  {
+    "title": "热门工具",
+    "children": [
+      {
+        "title": "ai",
+        "children": [
+          {
+            "url": "https://xiezuocat.com?s=tbox",
+            "desc": "AI智能写作辅助神器",
+            "icon": "https://www.tboxn.com/wp-content/uploads/2022/08/xiezuomao.png",
+            "title": "秘塔写作猫"
+          },
+          {
+            "url": "https://xiezuocat.com?s=tbox",
+            "desc": "AI智能写作辅助神器",
+            "icon": "https://www.tboxn.com/wp-content/uploads/2022/08/xiezuomao.png",
+            "title": "秘塔写作猫"
+          },
+          {
+            "url": "https://xiezuocat.com?s=tbox",
+            "desc": "AI智能写作辅助神器",
+            "icon": "https://www.tboxn.com/wp-content/uploads/2022/08/xiezuomao.png",
+            "title": "秘塔写作猫"
+          },
+          {
+            "url": "https://tusiart.com/?utm_source=box&source_id=box",
+            "desc": "AI 绘画模型分享社区和在线运行平台",
+            "icon": "https://www.tboxn.com/wp-content/uploads/2023/12/tusi.png",
+            "title": "吐司"
+          },
+
+          {
+            "url": "http://qr61.cn/o4gvGR/qXagS2I",
+            "desc": "每日分享淘宝/京东一手优惠信息",
+            "icon": "https://www.tboxn.com/wp-content/uploads/2022/02/30元优惠券-.png",
+            "title": "淘宝京东线报福利群"
+          },
+          {
+            "url": "https://www.maxiaobang.com/",
+            "desc": "专注互联网经验分享",
+            "icon": "https://www.tboxn.com/wp-content/uploads/2022/01/微信图片_20220114020109.jpg",
+            "title": "马小帮博客"
+          },
+          {
+            "url": "https://www.yougengwa.com/",
+            "desc": "十万个梗百科知识库，网络流行用语",
+            "icon": "https://www.tboxn.com/wp-content/uploads/2023/09/yougengwa-log.png",
+            "title": "有梗蛙"
+          }
+        ]
+      },
+      {
+        "title": "openai",
+        "children": [
+          {
+            "url": "https://88lingo.com/ai?utm_id=591",
+            "desc": "在线安全的灵感收集、思路整理笔记工具",
+            "icon": "https://www.tboxn.com/wp-content/uploads/2023/12/微信图片_20231215234553.jpg",
+            "title": "灵构AI笔记"
+          },
+
+          {
+            "url": "https://www.maxiaobang.com/superbookmark",
+            "desc": "浏览器书签也能变超级工具",
+            "icon": "https://www.tboxn.com/wp-content/uploads/2022/01/icon_c_书签_绿.png",
+            "title": "超级书签"
+          }
+        ]
+      },
+      {
+        "title": "openai",
+        "children": [
+          {
+            "url": "https://88lingo.com/ai?utm_id=591",
+            "desc": "在线安全的灵感收集、思路整理笔记工具",
+            "icon": "https://www.tboxn.com/wp-content/uploads/2023/12/微信图片_20231215234553.jpg",
+            "title": "灵构AI笔记"
+          },
+
+          {
+            "url": "https://www.maxiaobang.com/superbookmark",
+            "desc": "浏览器书签也能变超级工具",
+            "icon": "https://www.tboxn.com/wp-content/uploads/2022/01/icon_c_书签_绿.png",
+            "title": "超级书签"
+          }
+        ]
+      },
+      {
+        "title": "openai",
+        "children": [
+          {
+            "url": "https://88lingo.com/ai?utm_id=591",
+            "desc": "在线安全的灵感收集、思路整理笔记工具",
+            "icon": "https://www.tboxn.com/wp-content/uploads/2023/12/微信图片_20231215234553.jpg",
+            "title": "灵构AI笔记"
+          },
+
+          {
+            "url": "https://www.maxiaobang.com/superbookmark",
+            "desc": "浏览器书签也能变超级工具",
+            "icon": "https://www.tboxn.com/wp-content/uploads/2022/01/icon_c_书签_绿.png",
+            "title": "超级书签"
+          }
+        ]
+      },
+      {
+        "title": "openai",
+        "children": [
+          {
+            "url": "https://88lingo.com/ai?utm_id=591",
+            "desc": "在线安全的灵感收集、思路整理笔记工具",
+            "icon": "https://www.tboxn.com/wp-content/uploads/2023/12/微信图片_20231215234553.jpg",
+            "title": "灵构AI笔记"
+          },
+
+          {
+            "url": "https://www.maxiaobang.com/superbookmark",
+            "desc": "浏览器书签也能变超级工具",
+            "icon": "https://www.tboxn.com/wp-content/uploads/2022/01/icon_c_书签_绿.png",
+            "title": "超级书签"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "官方文档",
+    "children": [
+      {
+        "title": "doc",
+        "children": [
+          {
+            "url": "https://pdf.wondershare.cn/gn-1.html?utm_source=tboxn&utm_medium=referral&utm_campaign=daohang&utm_content=link_2023-09-19",
+            "desc": "免费PDF编辑神器",
+            "icon": "https://www.tboxn.com/wp-content/uploads/2023/03/微信图片_20230330235357.jpg",
+            "title": "万兴PDF"
+          },
+          {
+            "url": "https://smartread.cc/",
+            "desc": "免费/无广告/界面干净",
+            "icon": "https://www.tboxn.com/wp-content/uploads/2023/09/微信图片_20230904110549.jpg",
+            "title": "AI读报告/论文/合同"
+          },
+          {
+            "url": "https://chatgai.lovepor.cn/",
+            "desc": "基于ChatGPT接口开发的AI写作、问答、聊天、翻译多功能AI工具！",
+            "icon": "https://www.tboxn.com/wp-content/uploads/2023/11/head_logo_3x.png",
+            "title": "ChatGAi"
+          },
+          {
+            "url": "https://virbo.wondershare.cn/app/",
+            "desc": "AI数字人短视频在线创作平台",
+            "icon": "https://www.tboxn.com/wp-content/uploads/2023/12/万兴播报.png",
+            "title": "万兴播爆"
+          },
+          {
+            "url": "https://zh.z-library.se/",
+            "desc": "全球最大的数字图书馆",
+            "icon": "https://www.tboxn.com/wp-content/uploads/2022/02/图书-1.png",
+            "title": "Zlibrary"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "开发手册文档",
+    "children": [
+      {
+        "title": "doc8888",
+        "children": [
+          {
+            "url": "https://www.maxiaobang.com/12476.html",
+            "desc": "HEU_KMS_Activator ：支持 Windows/Office 永久激活",
+            "icon": "https://www.tboxn.com/wp-content/uploads/2022/01/圆形-3.png",
+            "title": "Windows/Office激活"
+          },
+          {
+            "url": "https://tool.maxiaobang.com/idm/",
+            "desc": "可将下载速度提高5倍的神器",
+            "icon": "https://www.tboxn.com/wp-content/uploads/2022/01/unnamed.jpg",
+            "title": "IDM多线程下载器"
+          }
+        ]
+      }
+    ]
+  }
 ]
