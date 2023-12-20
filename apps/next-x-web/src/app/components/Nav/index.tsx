@@ -1,5 +1,4 @@
-import React from "react";
-import "./styles.css";
+import React from 'react';
 import {
   Button,
   Col,
@@ -11,24 +10,28 @@ import {
   Collapse,
   theme,
   Avatar,
-} from "antd";
-import { SearchOutlined, CaretRightOutlined } from "@ant-design/icons";
+  Radio,
+} from 'antd';
+
+import { SearchOutlined, CaretRightOutlined } from '@ant-design/icons';
+
+type TabPosition = 'left' | 'right' | 'top' | 'bottom';
 
 const text = `
   A dog is a type of domesticated animal.
   Known for its loyalty and faithfulness,
   it can be found as a welcome guest in many households across the world.
 `;
-const getItems = (panelStyle) => [
+const getItems = (panelStyle: any) => [
   {
-    key: "1",
-    label: "This is panel header 1",
+    key: '1',
+    label: 'This is panel header 1',
     children: (
       <>
         <Card style={{ width: 300 }}>
           <Avatar
             style={{
-              verticalAlign: "middle",
+              verticalAlign: 'middle',
             }}
             size="large"
           >
@@ -41,14 +44,14 @@ const getItems = (panelStyle) => [
     style: panelStyle,
   },
   {
-    key: "2",
-    label: "This is panel header 2",
+    key: '2',
+    label: 'This is panel header 2',
     children: <p>{text}</p>,
     style: panelStyle,
   },
   {
-    key: "3",
-    label: "This is panel header 3",
+    key: '3',
+    label: 'This is panel header 3',
     children: <p>{text}</p>,
     style: panelStyle,
   },
@@ -61,13 +64,13 @@ function Item() {
     marginBottom: 24,
     background: token.colorFillAlter,
     borderRadius: token.borderRadiusLG,
-    border: "none",
+    border: 'none',
   };
 
   return (
     <Collapse
       bordered={false}
-      defaultActiveKey={["1"]}
+      defaultActiveKey={['1']}
       expandIcon={({ isActive }) => (
         <CaretRightOutlined rotate={isActive ? 90 : 0} />
       )}
@@ -84,35 +87,50 @@ export default function Index() {
     console.log(`selected ${value}`);
   };
 
-  const [mode, setMode] = React.useState("top");
+  const [mode, setMode] = React.useState<TabPosition>('left');
 
   return (
     <>
-      <Select
-        defaultValue="lucy"
-        style={{
-          margin: "60px auto 80px",
-          width: "40%",
-          display: "block",
-        }}
-        onChange={handleChange}
-        suffixIcon={<SearchOutlined />}
-        options={[
-          { value: "jack", label: "Jack" },
-          { value: "lucy", label: "Lucy" },
-          { value: "Yiminghe", label: "yiminghe" },
-          { value: "disabled", label: "Disabled", disabled: true },
-        ]}
-      />
-
       <Row>
         <Col span={16} offset={4}>
-          <Card title="dao hang" style={{ width: "100%", padding: "0" }}>
+          <Card
+            title="dao hang"
+            className="h-full "
+            bodyStyle={{
+              padding: '40px 12px',
+              overflowY: 'auto',
+            }}
+            headStyle={{
+              padding: '8px 12px',
+            }}
+            extra={
+              <Radio.Group
+                optionType="button"
+                options={[
+                  {
+                    label: '左',
+                    value: 'left',
+                  },
+                  {
+                    label: '上',
+                    value: 'top',
+                  },
+                  {
+                    label: '右',
+                    value: 'right',
+                  },
+                ]}
+                onChange={({ target: { value } }) => {
+                  setMode(value);
+                }}
+                value={mode}
+              />
+            }
+          >
             <Tabs
               defaultActiveKey="1"
               tabPosition={mode}
               style={{
-                height: 420,
               }}
               items={new Array(30).fill(null).map((_, i) => {
                 const id = String(i);
