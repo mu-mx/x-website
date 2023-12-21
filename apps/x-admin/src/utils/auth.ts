@@ -1,16 +1,14 @@
 import { request, useRequest } from "umi";
-import { baseUrl } from "@/api";
+import { userAuth } from "@/api";
+import { history } from "umi";
 
 export const auth = async (allParams: any) => {
-  console.log("allParams -> :", allParams);
+    console.log("allParams -> :", allParams);
+    if (allParams.location.pathname !== "/login") {
+        const res = await userAuth();
 
-  const res = await request<any>(baseUrl + "/user/auth", {
-    method: "GET",
-    params: {},
-  });
-  console.log("res -> :", res);
-
-  if (res.code == 401) {
-    location.href = "/login";
-  }
+        if (res.code == 401) {
+            history.push("/login");
+        }
+    }
 };

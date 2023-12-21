@@ -1,8 +1,8 @@
 import { defineConfig } from "umi";
 
 // console.log('process.env -> :', process.env)
-console.log("process.env.UMI_ENV -> :", process.env.UMI_ENV);
-console.log("process.env.BASE_API_URL -> :", process.env.BASE_API_URL);
+// console.log("process.env.UMI_ENV -> :", process.env.UMI_ENV);
+// console.log("process.env.BASE_API_URL -> :", process.env.BASE_API_URL);
 
 export default defineConfig({
   mock: false,

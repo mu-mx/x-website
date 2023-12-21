@@ -1,8 +1,14 @@
-import {ModalForm, ProFormCascader, ProFormText, ProFormTextArea, ProTable,} from "@ant-design/pro-components";
-import {Button, Form, message} from "antd";
-import {useReactive} from "ahooks";
+import {
+    ModalForm,
+    ProFormCascader,
+    ProFormText,
+    ProFormTextArea,
+    ProTable,
+} from "@ant-design/pro-components";
+import { Button, Form, message } from "antd";
+import { useReactive } from "ahooks";
 import useCategoryOptions from "@/hooks/useCategoryOptions";
-import {list, save} from "@/api/category";
+import { list, save } from "@/api/category";
 import React from "react";
 
 const Index = () => {
@@ -127,7 +133,10 @@ const Index = () => {
                 新增
             </Button>,
 
-            <Button key="4" type="">
+            <Button
+                key="4"
+                type=""
+            >
                 导入
             </Button>,
         ],
