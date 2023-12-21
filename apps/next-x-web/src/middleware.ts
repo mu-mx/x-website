@@ -7,6 +7,7 @@ import { successBody, errorBody } from '@/app/api/utils/config';
 export async function middleware(request: any) {
   const searchParams = request.nextUrl.searchParams;
   let token = searchParams.get('token') || '';
+  console.log('token - >:', token);
 
   if (!token) {
     try {
@@ -25,5 +26,5 @@ export async function middleware(request: any) {
 }
 
 export const config = {
-  matcher: ['/api/webSite/:path*', '/api/category/:path*'],
+  matcher: ['/api/auth', '/api/webSite/:path*', '/api/category/:path*'],
 };
