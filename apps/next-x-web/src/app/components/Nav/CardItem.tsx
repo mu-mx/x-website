@@ -17,10 +17,10 @@ import {
 
 import { SearchOutlined, CaretRightOutlined } from '@ant-design/icons';
 
-const ClickableCard = ({ icon, title, desc, url }: any) => {
+const ClickableCard = ({ icon, title, description, url }: any) => {
   return (
     <>
-      <Tooltip placement="top" title={desc}>
+      <Tooltip placement="top" title={description}>
         <a href={url} target="_blank">
           <Card
             hoverable
@@ -41,7 +41,7 @@ const ClickableCard = ({ icon, title, desc, url }: any) => {
             </Avatar>
             <div className="ml-1 truncate">
               <p className="truncate ">{title}</p>
-              <p className="truncate ">{desc}</p>
+              <p className="truncate ">{description}</p>
             </div>
           </Card>
         </a>

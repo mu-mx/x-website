@@ -21,11 +21,19 @@ import StickyBox from 'react-sticky-box';
 
 import CardItem from './CardItem';
 
-import data from './data.json';
+// import data from './data.json';
+
+import useSWR from 'swr';
+
+const fetcher = (...args: Parameters<typeof fetch>) =>
+  fetch(...args).then((res) => res.json());
 
 type TabPosition = 'left' | 'right' | 'top' | 'bottom';
 
 export default function Index() {
+  const { data, error, isLoading } = useSWR('/api/urls', fetcher);
+  console.log('data - >:', data);
+
   const [mode, setMode] = React.useState<TabPosition>('top');
 
   const {
@@ -89,7 +97,7 @@ export default function Index() {
               tabPosition={mode}
               destroyInactiveTabPane={true}
               tabBarGutter={12}
-              items={data.map((_, i) => {
+              items={(data?.data || []).map((_: any, i: number) => {
                 const id = String(i);
                 return {
                   label: `${_.title}`,

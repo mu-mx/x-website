@@ -39,7 +39,7 @@ export const request: RequestConfig = {
     },
     requestInterceptors: [
         (url: string, options: any) => {
-            if (options.method === "get") {
+            if (options.method == "get") {
                 options.params.token = localStorage.getItem("token");
             } else {
                 options.data.token = localStorage.getItem("token");

@@ -9,8 +9,12 @@ export async function middleware(request: any) {
   let token = searchParams.get('token') || '';
 
   if (!token) {
-    const res = await request.json();
-    token = res.token;
+    try {
+      const res = await request.json();
+      token = res.token;
+    } catch (err) {
+      return NextResponse.json(errorBody(401), { status: 200 });
+    }
   }
 
   if (token.includes('bea-')) {
@@ -21,5 +25,5 @@ export async function middleware(request: any) {
 }
 
 export const config = {
-  matcher: '/api/:path*',
+  matcher: ['/api/webSite/:path*', '/api/category/:path*'],
 };

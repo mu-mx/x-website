@@ -19,7 +19,7 @@ const Index = () => {
     });
 
     const [messageApi, contextHolder] = message.useMessage();
-    const opts = useCategoryOptions();
+    const [opts, refesh] = useCategoryOptions();
 
     const columns = [
         {
@@ -34,11 +34,6 @@ const Index = () => {
             ellipsis: true,
         },
         {
-            title: "描述",
-            dataIndex: "description",
-            search: false,
-        },
-        {
             title: "上级分类",
             dataIndex: "pTitle",
             valueType: "cascader",
@@ -50,6 +45,11 @@ const Index = () => {
                 },
                 changeOnSelect: true,
             },
+        },
+        {
+            title: "描述",
+            dataIndex: "description",
+            search: false,
         },
 
         {
@@ -64,9 +64,11 @@ const Index = () => {
                         state.title = "编辑分类";
                         state.row = record;
                         console.log("record -> :", record);
-                        record.pId = record.fullIds.split("-").map((item) => Number(item));
+
+                        record.pId = record.fullId.split("-").map((item) => Number(item));
                         if (record.pId.length > 1) {
                             record.pId.pop();
+                            record.pId.shift();
                         } else {
                             record.pId = [];
                         }
@@ -75,7 +77,9 @@ const Index = () => {
                 >
                     编辑
                 </a>,
-                <a key="view">删除</a>,
+
+                // <a key="view">删除</a>,
+
                 // <TableDropdown
                 //   key="actionGroup"
                 //   onSelect={() => action?.reload()}
@@ -117,7 +121,6 @@ const Index = () => {
                 params.pId = params.pTitle[params.pTitle.length - 1];
                 delete params.pTitle;
             }
-            console.log("params -> :", params);
             return list(params);
         },
 
@@ -172,18 +175,19 @@ const Index = () => {
                     if (state.row.id) {
                         values.id = state.row.id;
                     }
-                    console.log("values -> :", values);
+
                     const res = await save(values);
-                    
-                    // if (res.code !== 200) {
-                    //     messageApi.error(res.message);
-                    //     return false;
-                    // }
-                    // messageApi.success("提交成功");
-                    // state.open = false;
-                    // state.row = {};
-                    // baseTable.current.reload();
-                    // return true;
+
+                    if (res.code !== 200) {
+                        messageApi.error(res.msg);
+                        return false;
+                    }
+                    messageApi.success("提交成功");
+                    state.open = false;
+                    state.row = {};
+                    baseTable.current.reload();
+                    refesh();
+                    return true;
                 }}
             >
                 <ProFormText

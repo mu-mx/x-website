@@ -1,8 +1,8 @@
 import { request, useRequest } from "umi";
 import { baseUrl } from "@/api";
 
-export const list = async (params: any) => {
-    const res = await request<any>(baseUrl + "/category", {
+export const list = async (params = {}) => {
+    const res = await request<any>(baseUrl + "/category/page", {
         method: "GET",
         params,
     });
@@ -14,16 +14,16 @@ export const list = async (params: any) => {
     };
 };
 
-// export const getTreeList = async (params: any) => {
-//   const res = await request<any>(baseUrl + "/category", {
-//     method: "GET",
-//     params,
-//   });
-//   return res;
-// };
+export const getTreeList = async (params = {}) => {
+    const res = await request<any>(baseUrl + "/category/list", {
+        method: "GET",
+        params,
+    });
+    return res;
+};
 
-export const save = async (params: any) => {
-    const res = await request<any>(baseUrl + "/category", {
+export const save = async (params = {}) => {
+    const res = await request<any>(baseUrl + "/category/edit", {
         method: "post",
         data: params,
     });

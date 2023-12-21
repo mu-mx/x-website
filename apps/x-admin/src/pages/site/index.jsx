@@ -13,7 +13,7 @@ import React from "react";
 import useCategoryOptions from "@/hooks/useCategoryOptions";
 
 const SitePage = () => {
-    const opts = useCategoryOptions();
+    const [opts] = useCategoryOptions();
 
     const [form] = Form.useForm();
 
@@ -27,9 +27,22 @@ const SitePage = () => {
         },
         {
             title: "标题",
-            dataIndex: "name",
+            dataIndex: "title",
             copyable: true,
             ellipsis: true,
+        },
+        {
+            title: "网站分类",
+            dataIndex: "pTitle",
+            valueType: "cascader",
+            fieldProps: {
+                options: opts,
+                fieldNames: {
+                    label: "title",
+                    value: "id",
+                },
+                changeOnSelect: true,
+            },
         },
         {
             title: "描述",
@@ -65,19 +78,6 @@ const SitePage = () => {
         // },
 
         {
-            title: "网站分类",
-            dataIndex: "pTitle",
-            valueType: "cascader",
-            fieldProps: {
-                options: opts,
-                fieldNames: {
-                    label: "title",
-                    value: "id",
-                },
-                changeOnSelect: true,
-            },
-        },
-        {
             title: "操作",
             valueType: "option",
             key: "option",
@@ -89,37 +89,39 @@ const SitePage = () => {
                         state.title = "编辑网站";
                         state.row = record;
                         console.log("record -> :", record);
-                        record.pId = record.fullIds.split("-").map((item) => Number(item));
+
+                        record.pId = record.fullId.split("-").map((item) => Number(item));
                         if (record.pId.length > 1) {
-                            record.pId.pop();
+                            record.pId.shift();
                         }
                         form.setFieldsValue(record);
                     }}
                 >
                     编辑
                 </a>,
-                <a
-                    key="del"
-                    onClick={() => {
-                        Modal.confirm({
-                            title: "确认删除？",
-                            content: "是否确认删除该数据",
-                            onOk: () => {
-                                deletes({ ids: record.id }).then((res) => {
-                                    console.log("res", res);
-                                    if (res.code === 200) {
-                                        baseTable?.current?.reload();
-                                    }
-                                });
-                            },
-                            onCancel() {
-                                console.log("Cancel");
-                            },
-                        });
-                    }}
-                >
-                    删除
-                </a>, // <TableDropdown
+                // <a
+                //     key="del"
+                //     onClick={() => {
+                //         Modal.confirm({
+                //             title: "确认删除？",
+                //             content: "是否确认删除该数据",
+                //             onOk: () => {
+                //                 deletes({ ids: record.id }).then((res) => {
+                //                     console.log("res", res);
+                //                     if (res.code === 200) {
+                //                         baseTable?.current?.reload();
+                //                     }
+                //                 });
+                //             },
+                //             onCancel() {
+                //                 console.log("Cancel");
+                //             },
+                //         });
+                //     }}
+                // >
+                //     删除
+                // </a>,
+                // <TableDropdown
                 //   key="actionGroup"
                 //   onSelect={() => action?.reload()}
                 //   menus={[
@@ -215,6 +217,7 @@ const SitePage = () => {
                         values.id = state.row.id;
                     }
                     console.log("values -> :", values);
+
                     const res = await save(values);
                     if (res.code !== 200) {
                         message.error(res.message);
@@ -229,7 +232,7 @@ const SitePage = () => {
             >
                 <ProFormText
                     width="100%"
-                    name="name"
+                    name="title"
                     label="网站名称"
                     placeholder="请输入网站名称"
                     rules={[
@@ -241,7 +244,7 @@ const SitePage = () => {
                 />
                 <ProFormText
                     width="100%"
-                    name="src"
+                    name="url"
                     label="网站访问链接"
                     placeholder="请输入网站访问链接"
                     rules={[

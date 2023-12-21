@@ -5,7 +5,9 @@ export function getListPageData(filters: any) {
 
   for (const key in other) {
     if (![undefined, null].includes(other[key])) {
-      res = res.filter((item: any) => item[key].includes(other[key]));
+      res = res.filter((item: any) =>
+        item[key].toString().includes(other[key]),
+      );
     }
   }
   res = pagingFunction(current, pageSize, res);

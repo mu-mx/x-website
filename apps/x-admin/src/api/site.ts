@@ -1,9 +1,8 @@
-import {request} from "umi";
-import {baseUrl} from "@/api";
-
+import { request } from "umi";
+import { baseUrl } from "@/api";
 
 export const list = async (params: any) => {
-    const res = await request<any>(baseUrl + "/site/list", {
+    const res = await request<any>(baseUrl + "/webSite/page", {
         method: "GET",
         params,
     });
@@ -15,16 +14,15 @@ export const list = async (params: any) => {
 };
 
 export const save = async (params: any) => {
-    return await request<any>(baseUrl + "/site/save", {
+    return await request<any>(baseUrl + "/webSite/edit", {
         method: "post",
         data: params,
     });
 };
 
-export const deletes = async (params: any) => {
-    return await request<any>(baseUrl + "/site/delete", {
-        method: "post",
-        params,
-    });
-};
-
+// export const deletes = async (params: any) => {
+//     return await request<any>(baseUrl + "/webSite/delete", {
+//         method: "post",
+//         params,
+//     });
+// };
