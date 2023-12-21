@@ -14,7 +14,7 @@ const categoryFilePath = path.join(
   `${dataBasePath}/category.json`,
 );
 
-export async function saveData(data: any) {
+async function saveData(data: any) {
   await writeJsonFile(webSiteFilePath, data);
 }
 

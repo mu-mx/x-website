@@ -2,13 +2,13 @@ import { writeJsonFile, readJsonFile } from '@/app/api/utils/files';
 import { NextResponse } from 'next/server';
 import path from 'path';
 import { successBody, errorBody } from '@/app/api/utils/config';
-import { getListPageData } from '@/app/api/utils//tools';
+import { getListPageData } from '@/app/api/utils/tools';
 
 const dataBasePath = 'src/data';
 
 const filePath = path.join(process.cwd(), `${dataBasePath}/category.json`);
 
-export async function saveData(data: any) {
+async function saveData(data: any) {
   await writeJsonFile(filePath, data);
 }
 

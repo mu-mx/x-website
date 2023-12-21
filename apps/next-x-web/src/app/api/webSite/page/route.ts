@@ -6,7 +6,7 @@ import {
 import { NextResponse } from 'next/server';
 import path from 'path';
 import { successBody, errorBody } from '@/app/api/utils/config';
-import { getListPageData } from '@/app/api/utils//tools';
+import { getListPageData } from '@/app/api/utils/tools';
 
 const dataBasePath = 'src/data';
 
