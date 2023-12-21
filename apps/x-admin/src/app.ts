@@ -38,8 +38,13 @@ export const request: RequestConfig = {
         errorThrower() {},
     },
     requestInterceptors: [
-        (url, options) => {
-            options.params.token = localStorage.getItem("token");
+        (url: string, options: any) => {
+            if (options.method === "get") {
+                options.params.token = localStorage.getItem("token");
+            } else {
+                options.data.token = localStorage.getItem("token");
+            }
+
             // do something
             return { url, options };
         },

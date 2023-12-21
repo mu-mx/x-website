@@ -6,9 +6,9 @@ import {
     ProFormTextArea,
     ProTable,
 } from "@ant-design/pro-components";
-import {deletes, list, save} from "@/api/site";
-import {Button, Form, message, Modal} from "antd";
-import {useReactive} from "ahooks";
+import { deletes, list, save } from "@/api/site";
+import { Button, Form, message, Modal } from "antd";
+import { useReactive } from "ahooks";
 import React from "react";
 import useCategoryOptions from "@/hooks/useCategoryOptions";
 
@@ -42,8 +42,8 @@ const SitePage = () => {
             ellipsis: true,
             valueType: "select",
             valueEnum: {
-                0: {text: "停用", status: "0"},
-                1: {text: "启用", status: "1"},
+                0: { text: "停用", status: "0" },
+                1: { text: "启用", status: "1" },
             },
         }, // {
         //     disable: true,
@@ -105,10 +105,10 @@ const SitePage = () => {
                             title: "确认删除？",
                             content: "是否确认删除该数据",
                             onOk: () => {
-                                deletes({ids: record.id}).then((res) => {
+                                deletes({ ids: record.id }).then((res) => {
                                     console.log("res", res);
                                     if (res.code === 200) {
-                                        baseTable?.current?.reload()
+                                        baseTable?.current?.reload();
                                     }
                                 });
                             },
@@ -173,7 +173,10 @@ const SitePage = () => {
                 新增
             </Button>,
 
-            <Button key="4" type="">
+            <Button
+                key="4"
+                type=""
+            >
                 导入
             </Button>,
         ],
