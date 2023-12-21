@@ -10,10 +10,10 @@ const filePath = path.join(process.cwd(), `${dataBasePath}/category.json`);
 export const GET = async (request: any) => {
   try {
     const data = await readJsonFile(filePath);
-    return new NextResponse(successBody(data), { status: 200 });
+    return NextResponse.json(successBody(data), { status: 200 });
   } catch (err) {
     console.log('err - >:', err);
-    return new NextResponse(errorBody(), { status: 500 });
+    return NextResponse.json(errorBody(), { status: 500 });
   }
 };
 
