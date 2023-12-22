@@ -34,10 +34,10 @@ const mapToTree = (data) => {
 
 export const getDataBase = async () => {
     const categoryData = await get(
-        "https://raw.githubusercontent.com/mu-mx/site-database/main/category.json"
+        "https://raw.githubusercontent.com/mu-mx/site-database/main/data/category.json"
     );
     const websiteData = await get(
-        "https://raw.githubusercontent.com/mu-mx/site-database/main/website.json"
+        "https://raw.githubusercontent.com/mu-mx/site-database/main/data/website.json"
     );
     const categoryMap = {};
     categoryData.forEach((item) => {
