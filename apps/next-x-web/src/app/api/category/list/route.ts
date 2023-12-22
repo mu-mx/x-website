@@ -1,9 +1,12 @@
+export const dynamic = 'force-dynamic';
+
+
 import { writeJsonFile, readJsonFile } from '@/app/api/utils/files';
 import { NextResponse } from 'next/server';
 import path from 'path';
 import { successBody, errorBody } from '@/app/api/utils/config';
 
-const dataBasePath = 'src/data';
+const dataBasePath = 'src/app/api/data';
 
 const filePath = path.join(process.cwd(), `${dataBasePath}/category.json`);
 

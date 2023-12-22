@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 import {
   writeJsonFile,
   readJsonFile,
@@ -8,7 +10,7 @@ import path from 'path';
 import { successBody, errorBody } from '@/app/api/utils/config';
 import { getListPageData } from '@/app/api/utils/tools';
 
-const dataBasePath = 'src/data';
+const dataBasePath = 'src/app/api/data';
 
 const webSiteFilePath = path.join(
   process.cwd(),

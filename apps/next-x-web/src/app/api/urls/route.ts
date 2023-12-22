@@ -1,3 +1,6 @@
+export const dynamic = 'force-dynamic';
+
+
 import {
   writeJsonFile,
   readJsonFile,
@@ -7,7 +10,7 @@ import { NextResponse } from 'next/server';
 import path from 'path';
 import { successBody, errorBody } from '@/app/api/utils/config';
 
-const dataBasePath = 'src/data';
+const dataBasePath = 'src/app/api/data';
 
 const websiteFilePath = path.join(
   process.cwd(),
