@@ -1,8 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "build:pro": "turbo run build:pro",
-    "build:pre": "turbo run build:pre",
+    "build": "turbo run build",
     "dev": "turbo run dev"
   },
   "devDependencies": {
