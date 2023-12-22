@@ -19,7 +19,13 @@ export async function middleware(request: any) {
   }
 
   if (token.includes('bea-')) {
-    return NextResponse.next();
+    return NextResponse.next({
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+        'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+      },
+    });
   }
 
   return NextResponse.json(errorBody(401), { status: 200 });
