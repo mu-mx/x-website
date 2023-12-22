@@ -12,7 +12,7 @@ async function saveData(data: any) {
   await writeJsonFile(filePath, data);
 }
 
-export const POST = async (request: any) => {
+const handler = async (request: any) => {
   try {
     const json = await request.json();
 
@@ -41,7 +41,7 @@ export const POST = async (request: any) => {
       // 新增
       json.id = allCategorys.length + 1;
 
-      if (json.pId === 0) {
+      if (!json.pId) {
         json.fullId = `0-${json.id}`;
       } else {
         json.fullId = `${
@@ -58,7 +58,7 @@ export const POST = async (request: any) => {
       allCategorys.push(json);
     } else {
       // 修改
-      if (json.pId === 0) {
+      if (!json.pId) {
         json.fullId = `0-${json.id}`;
       } else {
         json.fullId = `${
@@ -90,3 +90,5 @@ export const POST = async (request: any) => {
     return NextResponse.json(errorBody(), { status: 200 });
   }
 };
+
+export { handler as GET, handler as POST };

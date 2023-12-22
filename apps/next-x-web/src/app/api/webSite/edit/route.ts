@@ -18,7 +18,7 @@ async function saveData(data: any) {
   await writeJsonFile(webSiteFilePath, data);
 }
 
-export const POST = async (request: any) => {
+const handler = async (request: any) => {
   try {
     const json = await request.json();
     let datas: any = await readJsonFileAndParse(webSiteFilePath);
@@ -55,3 +55,5 @@ export const POST = async (request: any) => {
     return NextResponse.json(errorBody(), { status: 200 });
   }
 };
+
+export { handler as GET, handler as POST };

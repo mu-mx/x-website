@@ -2,9 +2,8 @@
  {
   "title": "官方文档",
   "description": "官方文档",
-  "fullId": "0-1",
-  "pId": 0,
-  "id": 1
+  "id": 1,
+  "fullId": "0-1"
  },
  {
   "title": "Vue",

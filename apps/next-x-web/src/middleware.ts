@@ -1,34 +1,33 @@
 import { NextResponse } from 'next/server';
-import type { NextRequest } from 'next/server';
+import type { NextRequest, NextFetchEvent } from 'next/server';
 import { headers } from 'next/headers';
 import { successBody, errorBody } from '@/app/api/utils/config';
 
-// This function can be marked `async` if using `await` inside
-export async function middleware(request: any) {
-  const searchParams = request.nextUrl.searchParams;
-  let token = searchParams.get('token') || '';
+export async function middleware(request: any, event: NextFetchEvent) {
+  const response = NextResponse.next();
+
+  // Allowed origins check
+  const origin = request.headers.get('origin') ?? '';
+  console.log('origin - >:', origin);
+  if (origin) {
+    response.headers.set('Access-Control-Allow-Origin', origin);
+  }
+
+  response.headers.set('access-control-allow-credentials', 'true');
+  response.headers.set('Access-Control-Allow-Methods', '*');
+  response.headers.set('Access-Control-Allow-Headers', '*');
+
+  if (request.method.toUpperCase() == 'OPTIONS') {
+    return response;
+  }
+
+  let token = request.headers.get('Authorization') || '';
   console.log('token - >:', token);
 
   if (!token) {
-    try {
-      const res = await request.json();
-      token = res.token;
-    } catch (err) {
-      return NextResponse.json(errorBody(401), { status: 200 });
-    }
+    return NextResponse.json(errorBody(401), { status: 200 });
   }
-
-  if (token.includes('bea-')) {
-    return NextResponse.next({
-      headers: {
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
-        'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-      },
-    });
-  }
-
-  return NextResponse.json(errorBody(401), { status: 200 });
+  return response;
 }
 
 export const config = {

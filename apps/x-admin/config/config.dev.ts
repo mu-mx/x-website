@@ -7,11 +7,11 @@ export default defineConfig({
         },
         //   "process.env.BASE_API_URL": "http://localhost:8001",
     },
-    proxy: {
-        "/api": {
-            target: "http://localhost",
-            changeOrigin: true,
-            // pathRewrite: { "^/api": "" },
-        },
-    },
+    // proxy: {
+    //     "/api": {
+    //         target: "http://localhost",
+    //         changeOrigin: true,
+    //         // pathRewrite: { "^/api": "" },
+    //     },
+    // },
 });

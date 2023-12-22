@@ -39,11 +39,13 @@ export const request: RequestConfig = {
     },
     requestInterceptors: [
         (url: string, options: any) => {
-            if (options.method == "get") {
-                options.params.token = localStorage.getItem("token");
-            } else {
-                options.data.token = localStorage.getItem("token");
-            }
+            // if (options.method == "get") {
+            // } else {
+            //     options.data.token = localStorage.getItem("token");
+            // }
+
+            options.headers['Authorization'] = localStorage.getItem("token");
+            console.log('options - >:', options)
 
             // do something
             return { url, options };
