@@ -1,6 +1,5 @@
 export const dynamic = 'force-dynamic';
 
-
 import {
   writeJsonFile,
   readJsonFile,
@@ -10,16 +9,21 @@ import { NextResponse } from 'next/server';
 import path from 'path';
 import { successBody, errorBody } from '@/app/api/utils/config';
 
-const dataBasePath = 'src/app/api/data';
+// const dataBasePath = 'src/app/api/data';
 
-const websiteFilePath = path.join(
-  process.cwd(),
-  `${dataBasePath}/website.json`,
-);
-const categoryFilePath = path.join(
-  process.cwd(),
-  `${dataBasePath}/category.json`,
-);
+// const websiteFilePath = path.join(
+//   process.cwd(),
+//   `${dataBasePath}/website.json`,
+// );
+// const categoryFilePath = path.join(
+//   process.cwd(),
+//   `${dataBasePath}/category.json`,
+// );
+
+const dataBasePath = 'tmp';
+
+const websiteFilePath = path.join('/', dataBasePath, `website.json`);
+const categoryFilePath = path.join('/', dataBasePath, `category.json`);
 
 const mapToTree = (data: any) => {
   const res: any = [];
