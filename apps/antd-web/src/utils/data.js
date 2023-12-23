@@ -35,14 +35,12 @@ const mapToTree = (data) => {
 const mode = import.meta.env.MODE;
 console.log("mode - >:", mode);
 
-// https://raw.githubusercontent.com/mu-mx/site-database/main/data
-
-// https://gitee.com/afumi/site-database/raw/master/data
 
 const basePath =
     import.meta.env.MODE == "development"
         ? "/api/data"
-        : `https://gitee.com/afumi/site-database/raw/master/data`;
+        : `https://raw.githubusercontent.com/mu-mx/site-database/main/data`;
+        
 
 const categoryPath = `${basePath}/category.json`;
 const websitePath = `${basePath}/website.json`;
