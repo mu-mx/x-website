@@ -37,16 +37,25 @@ const ClickableCard = ({ icon, title, description, url }) => {
                             alignItems: "center",
                         }}
                     >
-                        <Avatar
-                            style={{
-                                verticalAlign: "middle",
-                            }}
-                            size="large"
-                            src={icon}
-                        >
-                            aaaa
-                        </Avatar>
-                        <div className="ml-1 truncate">
+                        {icon ? (
+                            <Avatar
+                                style={{
+                                    verticalAlign: "middle",
+                                }}
+                                size="large"
+                                src={icon}
+                            />
+                        ) : (
+                            <Avatar
+                                style={{
+                                    verticalAlign: "middle",
+                                }}
+                                size="large"
+                            >
+                                X
+                            </Avatar>
+                        )}
+                        <div className="ml-1 truncate flex-1">
                             <p className="truncate ">{title}</p>
                             <p className="truncate ">{description}</p>
                         </div>

@@ -32,13 +32,24 @@ const mapToTree = (data) => {
     return res;
 };
 
+const mode = import.meta.env;
+console.log("mode - >:", mode);
+
+// https://raw.githubusercontent.com/mu-mx/site-database/main/data
+
+// https://gitee.com/afumi/site-database/raw/master/data
+
+const basePath = import.meta.env.MODE
+    ? "/api/data"
+    : `https://gitee.com/afumi/site-database/raw/master/data`;
+
+const categoryPath = `${basePath}/category.json`;
+const websitePath = `${basePath}/website.json`;
+
 export const getDataBase = async () => {
-    const categoryData = await get(
-        "https://raw.githubusercontent.com/mu-mx/site-database/main/data/category.json"
-    );
-    const websiteData = await get(
-        "https://raw.githubusercontent.com/mu-mx/site-database/main/data/website.json"
-    );
+    const categoryData = await get(categoryPath);
+    const websiteData = await get(websitePath);
+
     const categoryMap = {};
     categoryData.forEach((item) => {
         item.children = [];
