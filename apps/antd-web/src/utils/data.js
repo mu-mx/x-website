@@ -39,7 +39,7 @@ console.log("mode - >:", mode);
 
 // https://gitee.com/afumi/site-database/raw/master/data
 
-const basePath = import.meta.env.MODE
+const basePath = import.meta.env.MODE == "development"
     ? "/api/data"
     : `https://gitee.com/afumi/site-database/raw/master/data`;
 
